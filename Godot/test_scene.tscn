@@ -8,7 +8,7 @@
 [node name="TestScene" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, -0.00250455, 0.503751, 0.863846, -0.499994, 0.747486, -0.437345, 0, 0, 0)
+transform = Transform3D(-0.866025, -0.433013, 0.25, -0.00250455, 0.503751, 0.863845, -0.499994, 0.747486, -0.437345, 0, 0, 0)
 shadow_enabled = true
 
 [node name="HexagonSpawner" type="Node" parent="."]
@@ -20,5 +20,5 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.0736375, 0)
 mesh = SubResource("PlaneMesh_abo8q")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.0491843, -0.684598, 0.72726, 0.0461936, 0.728921, 0.683038, -0.997721, -3.7338e-09, 0.0674755, 10.9653, 5.58312, 0.803885)
-fov = 71.6
+transform = Transform3D(-0.0151695, -0.974401, -0.224303, 0.0657482, -0.224815, 0.972181, -0.997721, 1.40017e-08, 0.0674755, 0.580991, 61.1602, 4.26426)
+fov = 50.8

@@ -11,6 +11,8 @@ albedo_color = Color(0, 0, 1, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_ecpwt"]
 material = SubResource("StandardMaterial3D_8bksu")
+top_radius = 1.0
+bottom_radius = 1.0
 
 [node name="Hexagon" type="RigidBody3D"]
 gravity_scale = 0.0
