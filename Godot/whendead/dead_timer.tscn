@@ -6,6 +6,7 @@
 script = ExtResource("1_y023h")
 
 [node name="CoinPlayer1" type="Timer" parent="."]
+process_callback = 0
 
 [node name="CoinPlayer2" type="Timer" parent="."]
 
