@@ -20,5 +20,5 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.0736375, 0)
 mesh = SubResource("PlaneMesh_abo8q")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.0151695, -0.974401, -0.224303, 0.0657482, -0.224815, 0.972181, -0.997721, 1.40017e-08, 0.0674755, 0.580991, 61.1602, 4.26426)
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 0, 103.386, 0)
 fov = 50.8
