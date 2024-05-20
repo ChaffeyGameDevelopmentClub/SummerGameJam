@@ -1,5 +1,11 @@
 extends Node2D
 
+
+@export var player_coin_1: Label
+@export var player_coin_2: Label
+@export var player_coin_3: Label
+@export var player_coin_4: Label
+
 #NOTES
 #player_ID
 #if player_ID = 1
@@ -7,6 +13,14 @@ extends Node2D
 
 func _ready():
 	$CoinPlayer1.start()
+	
+#updates the labels
+func _process(delta):
+	player_coin_1.text = str(AdrianGlobal.coin1)
+	player_coin_2.text = str(AdrianGlobal.coin2)
+	player_coin_3.text = str(AdrianGlobal.coin3)
+	player_coin_4.text = str(AdrianGlobal.coin4)
+
 
 #Checks if players coins are less than 10
 func _on_coin_player_1_timeout()-> void:
@@ -37,5 +51,4 @@ func _on_button_pressed():
 		$CoinPlayer1.start()
 	else:
 		print("NO WORK")
-	$PlayerCoin1.text = "%02d:" % AdrianGlobal.coin1
-	$PlayerCoin2.text = "%03d:" % AdrianGlobal.coin2
+	
