@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://b2ocwvjkcicdv"]
+
+[ext_resource type="Script" path="res://HexagonSpawner.gd" id="1_y4tqw"]
+[ext_resource type="PackedScene" uid="uid://b15hgq0pim3ha" path="res://hexagon.tscn" id="2_igfaw"]
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="3_qbtpx"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_abo8q"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nkwpr"]
+
+[node name="TestScene" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, -0.00250455, 0.503751, 0.863845, -0.499994, 0.747486, -0.437345, 0, 0, 0)
+shadow_enabled = true
+
+[node name="HexagonSpawner" type="Node" parent="."]
+script = ExtResource("1_y4tqw")
+hexagon = ExtResource("2_igfaw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.0736375, 0)
+mesh = SubResource("PlaneMesh_abo8q")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 0, 103.386, 0)
+fov = 50.8
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 38.5468, 0)
+script = ExtResource("3_qbtpx")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+current = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("SphereShape3D_nkwpr")

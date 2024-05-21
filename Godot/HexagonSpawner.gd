@@ -1,5 +1,5 @@
 extends Node
-var theta = 120.0
+var theta = 60.0
 var current_row = 1.0
 var radius = 1
 @export var hexagon: PackedScene 
@@ -16,6 +16,7 @@ func build_map ():
 	#add_child(new_hexagon)
 
 	var num = 0.0
+	var y = 0
 	for i  in range (find_num(row) - 1):
 		#print(num)
 		num += 1.0
@@ -25,16 +26,14 @@ func build_map ():
 			current_row += 1
 			radius += 2
 			num = 0.0
-			print()
-			print()
-			print()
-			print()
+			#y += 1
 
 		print(radius*cos(num*deg_to_rad(theta)), radius*sin(num*deg_to_rad(theta)))
 		var x = radius*cos(num*deg_to_rad(theta))
 		var z = radius*sin(num*deg_to_rad(theta))
+		
 		var new_hexagon = hexagon.instantiate()
-		new_hexagon.initialize(Vector3(x, 0, z))
+		new_hexagon.initialize(Vector3(x, y, z))
 		add_child(new_hexagon)
 		
 		#print (str(theta)+" " +str(current_row)+" " +str(radius)+" " +str(num))
