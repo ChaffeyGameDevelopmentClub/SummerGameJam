@@ -11,12 +11,17 @@ config_version=5
 [application]
 
 config/name="SummerGameJam"
+run/main_scene="res://whendead/dead_timer.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AdrianGlobal="*res://script/adrian_global.gd"
+
 [input]
 
-walk={
+kill={
 "deadzone": 0.5,
 "events": []
 }
