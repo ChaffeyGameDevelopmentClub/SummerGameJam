@@ -1,0 +1,128 @@
+[gd_scene load_steps=7 format=3 uid="uid://ywkqu5myubrk"]
+
+[ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1TopLeft.png" id="1_r5pfv"]
+[ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2TopRight.png" id="2_o1wqh"]
+[ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Art/Player3BottomLeft.png" id="3_j3pc7"]
+[ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Art/Player4BottomRight.png" id="4_v2mwk"]
+[ext_resource type="Texture2D" uid="uid://ba6gbb1ihthc1" path="res://icon.svg" id="5_if2nn"]
+
+[sub_resource type="Theme" id="Theme_0o3xg"]
+default_font_size = 23
+
+[node name="GameSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player Cards" type="Node" parent="."]
+
+[node name="GridContainer" type="GridContainer" parent="Player Cards"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 55.0
+offset_top = -306.0
+offset_right = 215.0
+offset_bottom = 186.0
+grow_vertical = 2
+scale = Vector2(1.25, 1.25)
+
+[node name="TextureRect" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_r5pfv")
+
+[node name="TextureRect2" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_o1wqh")
+
+[node name="TextureRect3" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_j3pc7")
+
+[node name="TextureRect4" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("4_v2mwk")
+
+[node name="PlayerNames" type="Node" parent="Player Cards"]
+
+[node name="Player1Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 77.0
+offset_top = -282.0
+offset_right = 171.0
+offset_bottom = -250.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+text = "Sam"
+
+[node name="Player2Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 138.0
+offset_top = -127.0
+offset_right = 231.0
+offset_bottom = -95.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+text = "Ben
+"
+
+[node name="Player3Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 79.0
+offset_top = 28.0
+offset_right = 172.0
+offset_bottom = 60.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+text = "Aki
+"
+
+[node name="Player4Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 139.0
+offset_top = 183.0
+offset_right = 232.0
+offset_bottom = 215.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+text = "Eli"
+
+[node name="Keyboard" type="Node" parent="."]
+
+[node name="GridContainer" type="GridContainer" parent="Keyboard"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -128.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureButton" type="TextureButton" parent="Keyboard/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_if2nn")
+
+[node name="TextureButton2" type="TextureButton" parent="Keyboard/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_if2nn")
+
+[node name="TextureButton3" type="TextureButton" parent="Keyboard/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_if2nn")
