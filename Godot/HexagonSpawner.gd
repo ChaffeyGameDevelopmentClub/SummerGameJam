@@ -1,10 +1,10 @@
 extends Node
 var theta = 120.0
 var current_row = 1.0
-var radius = 0
+var radius = 1
 @export var hexagon: PackedScene 
 var array: Array
-var row = 100
+var row = 10
 
 func _ready(): 
 	build_map()
