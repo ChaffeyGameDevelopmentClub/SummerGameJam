@@ -23,7 +23,7 @@ func _process(_delta):
 	player_coin_2.text = str(AdrianGlobal.coin2)
 	player_coin_3.text = str(AdrianGlobal.coin3)
 	player_coin_4.text = str(AdrianGlobal.coin4)
-	if Input.is_action_pressed("DrobBomb"):
+	if Input.is_action_just_released("DrobBomb"):
 			if AdrianGlobal.coin1 >= 10:
 				AdrianGlobal.emit_signal("bomb_press")
 				AdrianGlobal.coin1 -= 10
