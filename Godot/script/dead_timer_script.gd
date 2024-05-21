@@ -11,44 +11,43 @@ extends Node2D
 #if player_ID = 1
 	#$CoinPlayer1.start()
 
+#Atomatically starts the timer
+#may need a fix
 func _ready():
 	$CoinPlayer1.start()
-	
+
+
 #updates the labels
-func _process(delta):
+func _process(_delta):
 	player_coin_1.text = str(AdrianGlobal.coin1)
 	player_coin_2.text = str(AdrianGlobal.coin2)
 	player_coin_3.text = str(AdrianGlobal.coin3)
 	player_coin_4.text = str(AdrianGlobal.coin4)
+	if Input.is_action_pressed("DrobBomb"):
+			if AdrianGlobal.coin1 >= 10:
+				AdrianGlobal.emit_signal("bomb_press")
+				AdrianGlobal.coin1 -= 10
+				$CoinPlayer1.start()
+			else:
+				print("NO WORK")
 
 
 #Checks if players coins are less than 10
 func _on_coin_player_1_timeout()-> void:
 	#player 1 coins
 	#if player1 is dead:
-	if AdrianGlobal.coin1 <= 50:
+	if AdrianGlobal.coin1 <= 49:
 		AdrianGlobal.coin1 += 1
 		print(AdrianGlobal.coin1)
 		#player 2 coins
-	if AdrianGlobal.coin2 <= 50:
+	if AdrianGlobal.coin2 <= 49:
 		AdrianGlobal.coin2 += 1
 		print(AdrianGlobal.coin2)
 		#player 3 coins
-	if AdrianGlobal.coin3 <= 50:
+	if AdrianGlobal.coin3 <= 49:
 		AdrianGlobal.coin3 += 1
 		print(AdrianGlobal.coin3)
 		#player 4 coins
-	if AdrianGlobal.coin4 <= 50:
+	if AdrianGlobal.coin4 <= 49:
 		AdrianGlobal.coin4 += 1
 		print(AdrianGlobal.coin4)
-
-
-
-func _on_button_pressed():
-	if AdrianGlobal.coin1 >= 10:
-		AdrianGlobal.emit_signal("bomb_press")
-		AdrianGlobal.coin1 -= 10
-		$CoinPlayer1.start()
-	else:
-		print("NO WORK")
-	

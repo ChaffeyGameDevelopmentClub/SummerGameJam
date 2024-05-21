@@ -12,11 +12,6 @@ player_coin_4 = NodePath("PlayerCoin4")
 [node name="CoinPlayer1" type="Timer" parent="."]
 process_callback = 0
 
-[node name="Button" type="Button" parent="."]
-offset_right = 149.0
-offset_bottom = 44.0
-text = "press"
-
 [node name="PlayerCoin1" type="Label" parent="."]
 offset_left = 4.0
 offset_top = 55.0
@@ -44,4 +39,3 @@ offset_bottom = 74.0
 
 [connection signal="ready" from="CoinPlayer1" to="." method="_on_coin_player_1_ready"]
 [connection signal="timeout" from="CoinPlayer1" to="." method="_on_coin_player_1_timeout"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
