@@ -39,6 +39,6 @@ func process_character_input():
 
 func knockback(k: Knockback):
 	print("knockback")
-	velocity += (global_transform.origin - k.knockback_origin).normalized() * k.knockback_force
+	vector3 += (global_transform.origin - k.knockback_origin).normalized() * k.knockback_force
 	velocity.y += k.knockback_force/k.knockback_resistance
 	

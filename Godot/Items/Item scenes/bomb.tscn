@@ -11,7 +11,7 @@
 [node name="Bomb" type="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000905037, 3.57628e-07, 0.192319)
 script = ExtResource("1_pejav")
-knockback_force = 10.0
+knockback_force = 30.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -0.214496)
