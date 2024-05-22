@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cpuwtlf3iqct3"]
 
-[ext_resource type="Script" path="res://Node3D.gd" id="1_vjb86"]
+[ext_resource type="Script" path="res://script/Benny/Node3D.gd" id="1_vjb86"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x70lv"]
 
