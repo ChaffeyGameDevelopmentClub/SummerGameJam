@@ -1,0 +1,10 @@
+res://player.tscn
+res://example/Bomb tester.gd
+res://example/rigid_player.gd
+res://example/WorldTest.tscn
+res://example/rigid_player.tscn
+res://Classes/knockback.tscn
+res://Items/Item scenes/bomb.tscn
+res://Node3D.gd
+res://rigid_character_body_3d.gd
+res://Classes/knockback.gd
