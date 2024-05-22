@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://2t3fyv7qrj1o"]
 
-[ext_resource type="Script" path="res://script/bomb_spawner.gd" id="1_1ftqi"]
-[ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://whendead/dead_timer.tscn" id="3_ngn6d"]
+[ext_resource type="Script" path="res://Scripts/PlayerDeadscript/bomb_spawner.gd" id="1_1ftqi"]
+[ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://Scenes/DeadScene/dead_timer.tscn" id="3_ngn6d"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hx4iq"]
 resource_name = "Material.001"

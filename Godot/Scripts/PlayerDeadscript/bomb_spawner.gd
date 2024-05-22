@@ -9,5 +9,5 @@ func _ready():
 
 func spawn_bomb():
 	var new_bomb = bomb.instantiate()
-	new_bomb.global_position = $"../Node3D".global_position
+	new_bomb.global_position = Vector3.ZERO
 	add_child(new_bomb)

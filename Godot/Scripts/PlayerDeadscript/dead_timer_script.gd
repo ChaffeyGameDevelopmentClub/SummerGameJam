@@ -38,7 +38,7 @@ func _process(_delta):
 			if AdrianGlobal.coin2 >= 10:
 				AdrianGlobal.emit_signal("bomb_press")
 				AdrianGlobal.coin2 -= 10
-				$CoinPlayer2.start()
+				$CoinPlayer1.start()
 			else:
 				print("NO WORK")
 
@@ -47,7 +47,7 @@ func _process(_delta):
 			if AdrianGlobal.coin3 >= 10:
 				AdrianGlobal.emit_signal("bomb_press")
 				AdrianGlobal.coin3 -= 10
-				$CoinPlayer3.start()
+				$CoinPlayer1.start()
 			else:
 				print("NO WORK")
 
@@ -56,7 +56,7 @@ func _process(_delta):
 			if AdrianGlobal.coin4 >= 10:
 				AdrianGlobal.emit_signal("bomb_press")
 				AdrianGlobal.coin4 -= 10
-				$CoinPlayer4.start()
+				$CoinPlayer1.start()
 			else:
 				print("NO WORK")
 

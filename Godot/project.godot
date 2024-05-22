@@ -11,13 +11,12 @@ config_version=5
 [application]
 
 config/name="SummerGameJam"
-run/main_scene="res://whendead/dead_timer.tscn"
+run/main_scene="res://Scenes/DeadScene/dead_timer.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
 
 [autoload]
 
-AdrianGlobal="*res://script/adrian_global.gd"
+AdrianGlobal="*res://Scripts/PlayerDeadscript/adrian_global.gd"
 
 [input]
 
@@ -30,16 +29,19 @@ DrobBombP1={
 DropBombP2={
 "deadzone": 0.5,
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":1,"axis":5,"axis_value":1.0,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":128,"position":Vector2(211, 18),"global_position":Vector2(215, 59),"factor":1.0,"button_index":8,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 DropBombP3={
 "deadzone": 0.5,
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":2,"axis":5,"axis_value":1.0,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":256,"position":Vector2(190, 13),"global_position":Vector2(194, 54),"factor":1.0,"button_index":9,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 DropBombP4={
 "deadzone": 0.5,
 "events": [Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":3,"axis":5,"axis_value":1.0,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(173, 13),"global_position":Vector2(177, 54),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
 
