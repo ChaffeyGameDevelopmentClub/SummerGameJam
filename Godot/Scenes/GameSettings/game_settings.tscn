@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://ywkqu5myubrk"]
+[gd_scene load_steps=39 format=3 uid="uid://ywkqu5myubrk"]
 
 [ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
 [ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
@@ -21,6 +21,22 @@
 [ext_resource type="Texture2D" uid="uid://bops55tbn8sh3" path="res://Assets/Art/Sectioned Keys/keys/j.png" id="19_v2bv8"]
 [ext_resource type="Texture2D" uid="uid://dkh2yfxqgho3d" path="res://Assets/Art/Sectioned Keys/keys/k.png" id="20_3vhpb"]
 [ext_resource type="Texture2D" uid="uid://hoio3kfoh6o3" path="res://Assets/Art/Sectioned Keys/keys/l.png" id="21_id15q"]
+[ext_resource type="Texture2D" uid="uid://dkd5juckx2exb" path="res://Assets/Art/Sectioned Keys/keys/m.png" id="22_le8e0"]
+[ext_resource type="Texture2D" uid="uid://cyjyumubdvgj1" path="res://Assets/Art/Sectioned Keys/keys/n.png" id="23_xhvkj"]
+[ext_resource type="Texture2D" uid="uid://dsnr306qebw7e" path="res://Assets/Art/Sectioned Keys/keys/o.png" id="24_003to"]
+[ext_resource type="Texture2D" uid="uid://d01t8jdxv2dj4" path="res://Assets/Art/Sectioned Keys/keys/p.png" id="25_cdvrn"]
+[ext_resource type="Texture2D" uid="uid://dpvpr37w6o8sn" path="res://Assets/Art/Sectioned Keys/keys/q.png" id="26_vgrok"]
+[ext_resource type="Texture2D" uid="uid://cp4lngopks2h8" path="res://Assets/Art/Sectioned Keys/keys/r.png" id="27_67qkh"]
+[ext_resource type="Texture2D" uid="uid://csajrn2tvnvjx" path="res://Assets/Art/Sectioned Keys/keys/s.png" id="28_fjnk5"]
+[ext_resource type="Texture2D" uid="uid://ct63srrtj3qkm" path="res://Assets/Art/Sectioned Keys/keys/t.png" id="29_eu2sm"]
+[ext_resource type="Texture2D" uid="uid://82q4ar7c5bkd" path="res://Assets/Art/Sectioned Keys/keys/u.png" id="30_ry6t4"]
+[ext_resource type="Texture2D" uid="uid://dj42o0ug37ivj" path="res://Assets/Art/Sectioned Keys/keys/v.png" id="31_dwfx2"]
+[ext_resource type="Texture2D" uid="uid://cpu237uxr1vx" path="res://Assets/Art/Sectioned Keys/keys/w.png" id="32_jtob2"]
+[ext_resource type="Texture2D" uid="uid://etfphbujwutb" path="res://Assets/Art/Sectioned Keys/keys/x.png" id="33_ruq5k"]
+[ext_resource type="Texture2D" uid="uid://cc6mg5wx0l14a" path="res://Assets/Art/Sectioned Keys/keys/y.png" id="34_g622b"]
+[ext_resource type="Texture2D" uid="uid://bnxhhi1tud154" path="res://Assets/Art/Sectioned Keys/keys/z.png" id="35_lthnu"]
+[ext_resource type="Texture2D" uid="uid://2qhd2k12xbrg" path="res://Assets/Art/Sectioned Keys/keys/Back.png" id="36_qknld"]
+[ext_resource type="Texture2D" uid="uid://cqru6260g722n" path="res://Assets/Art/Sectioned Keys/keys/Enter.png" id="37_2vs8i"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
@@ -126,14 +142,14 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -822.0
-offset_top = -286.0
-offset_right = -626.0
-offset_bottom = -90.0
+offset_left = -787.0
+offset_top = -304.0
+offset_right = -591.0
+offset_bottom = -228.0
 grow_horizontal = 0
 grow_vertical = 0
-scale = Vector2(4, 4)
-columns = 10
+scale = Vector2(3.5, 3.5)
+columns = 9
 
 [node name="TextureButtonA" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
@@ -203,99 +219,90 @@ texture_normal = ExtResource("21_id15q")
 [node name="TextureButton13" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("22_le8e0")
 
 [node name="TextureButton14" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("23_xhvkj")
 
 [node name="TextureButton15" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("24_003to")
 
 [node name="TextureButton16" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
+texture_normal = ExtResource("25_cdvrn")
 texture_pressed = ExtResource("6_y62wq")
 
 [node name="TextureButton17" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("26_vgrok")
 
 [node name="TextureButton18" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("27_67qkh")
 
 [node name="TextureButton19" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("28_fjnk5")
 
 [node name="TextureButton20" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("29_eu2sm")
 
 [node name="TextureButton21Fake" type="TextureButton" parent="Keyboard/GridContainer"]
+visible = false
 texture_filter = 1
 layout_mode = 2
 
 [node name="TextureButton22" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("30_ry6t4")
 
 [node name="TextureButton23" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("31_dwfx2")
 
 [node name="TextureButton24" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("32_jtob2")
 
 [node name="TextureButton25" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("33_ruq5k")
 
 [node name="TextureButton26" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("34_g622b")
 
 [node name="TextureButton27" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("35_lthnu")
 
-[node name="TextureButtonDelete" type="TextureButton" parent="Keyboard/GridContainer"]
+[node name="GridContainer2" type="GridContainer" parent="Keyboard/GridContainer"]
+layout_mode = 2
+
+[node name="TextureButtonDelete" type="TextureButton" parent="Keyboard/GridContainer/GridContainer2"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("36_qknld")
 
-[node name="TextureButtonEnter" type="TextureButton" parent="Keyboard/GridContainer"]
+[node name="TextureButtonEnter" type="TextureButton" parent="Keyboard/GridContainer/GridContainer2"]
 texture_filter = 1
 layout_mode = 2
-texture_normal = ExtResource("5_oiinv")
-texture_pressed = ExtResource("6_y62wq")
+texture_normal = ExtResource("37_2vs8i")
+
+[node name="Game Settings" type="Node" parent="."]
