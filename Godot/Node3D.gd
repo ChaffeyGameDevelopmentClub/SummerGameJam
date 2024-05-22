@@ -29,3 +29,10 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+	#knock back function
+func knockback(k: Knockback):
+	print("knockback")
+	velocity += (global_transform.origin - k.knockback_origin).normalized() * k.knockback_force
+	velocity.y += k.knockback_force/k.knockback_resistance
+	

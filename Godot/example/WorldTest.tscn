@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://bmhqnfqnfjgy5"]
+[gd_scene load_steps=16 format=3 uid="uid://bmhqnfqnfjgy5"]
 
-[ext_resource type="PackedScene" uid="uid://uwjofkm4iyb2" path="res://example/rigid_player.tscn" id="3_e4etq"]
+[ext_resource type="PackedScene" uid="uid://cpuwtlf3iqct3" path="res://player.tscn" id="1_780p0"]
+[ext_resource type="Script" path="res://example/Bomb tester.gd" id="2_mg774"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_10kov"]
 
@@ -65,7 +66,7 @@ albedo_color = Color(0, 0.501961, 1, 0.666667)
 material = SubResource("StandardMaterial3D_t3gbo")
 size = Vector3(3, 0.6, 3)
 
-[node name="Example" type="Node3D"]
+[node name="World test" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_yp2li")
@@ -81,9 +82,6 @@ mesh = SubResource("PlaneMesh_dbtwq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_75t77")
-
-[node name="RigidPlayer" parent="." node_paths=PackedStringArray("orientation_node") instance=ExtResource("3_e4etq")]
-orientation_node = NodePath("../Camera3D")
 
 [node name="Obstacles" type="Node3D" parent="."]
 
@@ -176,6 +174,19 @@ use_collision = true
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8, 0, 4)
 use_collision = true
 
+[node name="Player" parent="." instance=ExtResource("1_780p0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46679, 0)
+
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.79653, 0.604599, 0, -0.604599, 0.79653, -3.22587, 6.98362, 12.5326)
+transform = Transform3D(1, 0, 0, 0, 0.79653, 0.604599, 0, -0.604599, 0.79653, -3.22587, 11.473, 21.3873)
 current = true
+
+[node name="Bomb tester" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.79653, 0.604599, 0, -0.604599, 0.79653, 1.84901, 0.617046, -4.037)
+script = ExtResource("2_mg774")
+
+[node name="bomb spawner tiem" type="Timer" parent="Bomb tester"]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Bomb tester/bomb spawner tiem" to="Bomb tester" method="_on_bomb_spawner_tiem_timeout"]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://k6hxb5poa3yf"]
+
+[ext_resource type="Script" path="res://Items/Item scenes/bomb.gd" id="1_pejav"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_x3ak5"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_bilqs"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wbwi1"]
+
+[node name="Bomb" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000905037, 3.57628e-07, 0.192319)
+script = ExtResource("1_pejav")
+knockback_force = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -0.214496)
+shape = SubResource("SphereShape3D_x3ak5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.509642, 0, 0, 0, 1, 0, 0, -0.213145)
+mesh = SubResource("CapsuleMesh_bilqs")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -0.22471)
+shape = SubResource("SphereShape3D_wbwi1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.147
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
