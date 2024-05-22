@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://ywkqu5myubrk"]
 
-[ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1TopLeft.png" id="1_r5pfv"]
-[ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2TopRight.png" id="2_o1wqh"]
-[ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Art/Player3BottomLeft.png" id="3_j3pc7"]
-[ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Art/Player4BottomRight.png" id="4_v2mwk"]
+[ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
+[ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
+[ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Art/Player3/Player3BottomLeft.png" id="3_j3pc7"]
+[ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Art/Player4/Player4BottomRight.png" id="4_v2mwk"]
 [ext_resource type="Texture2D" uid="uid://ba6gbb1ihthc1" path="res://icon.svg" id="5_if2nn"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
@@ -117,7 +117,6 @@ grow_vertical = 0
 
 [node name="TextureButton" type="TextureButton" parent="Keyboard/GridContainer"]
 layout_mode = 2
-texture_normal = ExtResource("5_if2nn")
 
 [node name="TextureButton2" type="TextureButton" parent="Keyboard/GridContainer"]
 layout_mode = 2
