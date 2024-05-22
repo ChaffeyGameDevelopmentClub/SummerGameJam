@@ -8,4 +8,4 @@ func crumble():
 func _on_fall_timer_timeout():
 	position.y -= num
 	num += num/10
-	
+	queue_free()
