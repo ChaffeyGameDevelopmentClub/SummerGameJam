@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://tdwswcrnkfy7"]
 
-[ext_resource type="Script" path="res://script/dead_timer_script.gd" id="1_y023h"]
+[ext_resource type="Script" path="res://script/Adrain/dead_timer_script.gd" id="1_y023h"]
 
 [node name="DeadTimer" type="Node2D" node_paths=PackedStringArray("player_coin_1", "player_coin_2", "player_coin_3", "player_coin_4")]
 script = ExtResource("1_y023h")
