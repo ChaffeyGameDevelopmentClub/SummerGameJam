@@ -6,3 +6,4 @@ var coin3 = 0
 var coin4 = 0
 
 signal bomb_press
+

@@ -23,13 +23,48 @@ func _process(_delta):
 	player_coin_2.text = str(AdrianGlobal.coin2)
 	player_coin_3.text = str(AdrianGlobal.coin3)
 	player_coin_4.text = str(AdrianGlobal.coin4)
-	if Input.is_action_just_released("DrobBomb"):
+	
+	#Player 1 Input
+	if Input.is_action_just_released("DrobBombP1"):
 			if AdrianGlobal.coin1 >= 10:
 				AdrianGlobal.emit_signal("bomb_press")
 				AdrianGlobal.coin1 -= 10
 				$CoinPlayer1.start()
 			else:
 				print("NO WORK")
+
+	#Player 2 Input
+	if Input.is_action_just_released("DropBombP2"):
+			if AdrianGlobal.coin2 >= 10:
+				AdrianGlobal.emit_signal("bomb_press")
+				AdrianGlobal.coin2 -= 10
+				$CoinPlayer2.start()
+			else:
+				print("NO WORK")
+
+	#Player 3 Input
+	if Input.is_action_just_released("DropBombP3"):
+			if AdrianGlobal.coin3 >= 10:
+				AdrianGlobal.emit_signal("bomb_press")
+				AdrianGlobal.coin3 -= 10
+				$CoinPlayer3.start()
+			else:
+				print("NO WORK")
+
+	#Player 4 Input
+	if Input.is_action_just_released("DropBombP4"):
+			if AdrianGlobal.coin4 >= 10:
+				AdrianGlobal.emit_signal("bomb_press")
+				AdrianGlobal.coin4 -= 10
+				$CoinPlayer4.start()
+			else:
+				print("NO WORK")
+
+
+
+
+
+
 
 
 #Checks if players coins are less than 10
@@ -38,16 +73,16 @@ func _on_coin_player_1_timeout()-> void:
 	#if player1 is dead:
 	if AdrianGlobal.coin1 <= 49:
 		AdrianGlobal.coin1 += 1
-		print(AdrianGlobal.coin1)
+
 		#player 2 coins
 	if AdrianGlobal.coin2 <= 49:
 		AdrianGlobal.coin2 += 1
-		print(AdrianGlobal.coin2)
+
 		#player 3 coins
 	if AdrianGlobal.coin3 <= 49:
 		AdrianGlobal.coin3 += 1
-		print(AdrianGlobal.coin3)
+
 		#player 4 coins
 	if AdrianGlobal.coin4 <= 49:
 		AdrianGlobal.coin4 += 1
-		print(AdrianGlobal.coin4)
+
