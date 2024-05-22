@@ -37,3 +37,5 @@ fov = 122.9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("SphereShape3D_nkwpr")
+
+[node name="Timer" type="Timer" parent="."]
