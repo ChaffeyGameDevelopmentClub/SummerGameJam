@@ -2,6 +2,7 @@ extends Node
 
 @export var hexagon: PackedScene 
 @export var crumble_timer: Timer
+@export var row = 15
 
 var theta = 120.0
 var current_row = 1.0
@@ -10,7 +11,7 @@ var num_of_hexagons: Array
 var hexagon_array: Array
 var hex_row: int = 0
 var hex_id: int = 0 # rand later
-var row = 15
+
 var rng 
 
 func _ready(): 
@@ -23,7 +24,7 @@ func build_map ():
 	var y = 0
 	hexagon_array.append([])
 	for i  in range (find_num(row)):
-		#breaks crumble function ?
+		#breaks crumble function ? put a delay between the two ie: start after for loop
 		#await get_tree().create_timer(.01).timeout
 		if i == num_of_hexagons [current_row - 1]:
 			theta = 360.0 / (6.0 * (current_row))
@@ -37,7 +38,6 @@ func build_map ():
 		var z = radius*sin(num*deg_to_rad(theta))
 		var new_hexagon = hexagon.instantiate()
 		add_child(new_hexagon)
-		
 		hexagon_array[hex_row].append(new_hexagon)
 		new_hexagon.initialize(Vector3(x, y, z))
 		num += 1
@@ -53,8 +53,6 @@ func find_num (row) -> float:
 		return x
 
 
-
-
 func _on_crumble_timer_timeout():
 	if hexagon_array[hex_row].size() <= 0:
 		hex_row -= 1
@@ -63,10 +61,6 @@ func _on_crumble_timer_timeout():
 		hex_id = rng.randi_range(0, hexagon_array[hex_row].size() - 1)
 	if hexagon_array[hex_row].is_empty():
 		crumble_timer.stop()
-		await get_tree().create_timer(2).timeout
-		$"../_)".visible = true
 		return
-	#print(hexagon_array[hex_row].size())
-	print(str(hex_row) + " " + str(hex_id))
 	hexagon_array[hex_row][hex_id].crumble()
 	hexagon_array[hex_row].remove_at(hex_id)
