@@ -7,6 +7,7 @@
 [sub_resource type="PlaneMesh" id="PlaneMesh_abo8q"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_nkwpr"]
+radius = 0.714181
 
 [node name="TestScene" type="Node3D"]
 
@@ -32,6 +33,7 @@ script = ExtResource("3_qbtpx")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
 current = true
+fov = 122.9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("SphereShape3D_nkwpr")

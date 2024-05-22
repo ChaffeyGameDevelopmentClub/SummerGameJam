@@ -13,8 +13,8 @@ func _ready():
 
 func _physics_process(delta):
 	# Add the gravity.
-	#if not is_on_floor():
-		#velocity.y += -gravity/100
+	if not is_on_floor():
+		velocity.y += -gravity/100
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept"):
 		velocity.y = JUMP_VELOCITY
