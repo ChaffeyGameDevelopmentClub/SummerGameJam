@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://uwjofkm4iyb2"]
+
+[ext_resource type="Script" path="res://example/rigid_player.gd" id="1_4b7qx"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3ggag"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tnv27"]
+height = 1.5
+
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_xe7iv"]
+slide_on_slope = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iwnkb"]
+
+[node name="RigidPlayer" type="RigidBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_3ggag")
+gravity_scale = 0.0
+script = ExtResource("1_4b7qx")
+gravity = null
+jump_force = null
+walk_force = null
+run_force = null
+air_force = null
+drag_force = null
+fluid_density = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CapsuleShape3D_tnv27")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("SeparationRayShape3D_xe7iv")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00830555, 1.19209e-07, -0.00453746)
+mesh = SubResource("CapsuleMesh_iwnkb")
