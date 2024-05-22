@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716412026
+::res://::1716412178
 .gitignore.txt::TextFile::-1::1716409439::0::1::::<><>::
 icon.png::CompressedTexture2D::7596669879781922311::1716409439::1716412027::1::::<><>::
 LICENSE.txt::TextFile::-1::1716409439::0::1::::<><>::
@@ -10,14 +10,14 @@ rigid_character_body_3d.gd::GDScript::-1::1716409439::0::1::::RigidCharacterBody
 ::res://Classes/::1716411042
 knockback.gd::GDScript::-1::1716409439::0::1::::Knockback<>RefCounted<>::
 knockback.tscn::PackedScene::7514131311486414196::1716411042::0::1::::<><>::res://Classes/knockback.gd
-::res://example/::1716411962
+::res://example/::1716412056
 Bomb tester.gd::GDScript::-1::1716409439::0::1::::<>Node3D<>::
 rigid_player.gd::GDScript::-1::1716409439::0::1::::<>RigidCharacterBody3D<>::
 rigid_player.tscn::PackedScene::1449764916048645421::1716411042::0::1::::<><>::res://example/rigid_player.gd
-WorldTest.tscn::PackedScene::3244132426764260254::1716411962::0::1::::<><>::uid://cpuwtlf3iqct3::::res://player.tscn<>res://example/Bomb tester.gd
+WorldTest.tscn::PackedScene::3244132426764260254::1716412056::0::1::::<><>::uid://cpuwtlf3iqct3::::res://player.tscn<>res://example/Bomb tester.gd
 ::res://Items/::1716409439
 ::res://Items/Item meshs/::1716342820
-::res://Items/Item scenes/::1716411042
+::res://Items/Item scenes/::1716412056
 bomb.gd::GDScript::-1::1716409439::0::1::::<>RigidBody3D<>::
-bomb.tscn::PackedScene::766350338533110629::1716411042::0::1::::<><>::res://Items/Item scenes/bomb.gd
+bomb.tscn::PackedScene::766350338533110629::1716412056::0::1::::<><>::res://Items/Item scenes/bomb.gd
 ::res://Scenes/::1716040507
