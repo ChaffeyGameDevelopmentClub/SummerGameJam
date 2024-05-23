@@ -36,3 +36,9 @@ func process_character_input():
 	input_direction = Input.get_vector("move_left", "move_right", "move_backward", "move_forward")
 	jump_input = Input.is_action_just_pressed("jump")
 	run_input = Input.is_action_just_pressed("run")
+
+func knockback(k: Knockback):
+	print("knockback")
+	velocity += (global_transform.origin - k.knockback_origin).normalized() * k.knockback_force
+	velocity.y += k.knockback_force/k.knockback_resistance
+	

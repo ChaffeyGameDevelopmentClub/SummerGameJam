@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://tdwswcrnkfy7"]
+
+[ext_resource type="Script" path="res://script/Adrain/dead_timer_script.gd" id="1_y023h"]
+
+[node name="DeadTimer" type="Node2D" node_paths=PackedStringArray("player_coin_1", "player_coin_2", "player_coin_3", "player_coin_4")]
+script = ExtResource("1_y023h")
+player_coin_1 = NodePath("PlayerCoin1")
+player_coin_2 = NodePath("PlayerCoin2")
+player_coin_3 = NodePath("PlayerCoin3")
+player_coin_4 = NodePath("PlayerCoin4")
+
+[node name="CoinPlayer1" type="Timer" parent="."]
+process_callback = 0
+
+[node name="PlayerCoin1" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 55.0
+offset_right = 78.0
+offset_bottom = 78.0
+size_flags_horizontal = 0
+
+[node name="PlayerCoin2" type="Label" parent="."]
+offset_left = 205.0
+offset_top = 55.0
+offset_right = 240.0
+offset_bottom = 78.0
+
+[node name="PlayerCoin3" type="Label" parent="."]
+offset_left = 398.0
+offset_top = 49.0
+offset_right = 438.0
+offset_bottom = 72.0
+
+[node name="PlayerCoin4" type="Label" parent="."]
+offset_left = 568.0
+offset_top = 51.0
+offset_right = 608.0
+offset_bottom = 74.0
+
+[connection signal="ready" from="CoinPlayer1" to="." method="_on_coin_player_1_ready"]
+[connection signal="timeout" from="CoinPlayer1" to="." method="_on_coin_player_1_timeout"]
