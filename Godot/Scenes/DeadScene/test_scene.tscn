@@ -1,7 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://2t3fyv7qrj1o"]
+[gd_scene load_steps=15 format=3 uid="uid://2t3fyv7qrj1o"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerDeadscript/bomb_spawner.gd" id="1_1ftqi"]
-[ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://Scenes/DeadScene/dead_timer.tscn" id="3_ngn6d"]
+[ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://whendead/dead_timer.tscn" id="3_ngn6d"]
+[ext_resource type="PackedScene" uid="uid://d2iafspofv8gk" path="res://whendead/DeadPlayer1.tscn" id="3_sofki"]
+[ext_resource type="PackedScene" uid="uid://c8v8urb8jo38c" path="res://whendead/DeadPlayer2.tscn" id="4_fn1bx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hx4iq"]
 resource_name = "Material.001"
@@ -162,7 +164,7 @@ transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.430511, 0.902586, 0, -0.902585, 0.430511, 0.0221682, 7.73503, -0.0306739)
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 0, 4.60359, 0)
 current = true
 
 [node name="BombSpawner" type="Node" parent="."]
@@ -175,3 +177,9 @@ bomb = SubResource("PackedScene_0lwhu")
 transform = Transform3D(6.95, 0, 0, 0, 6.95, 0, 0, 0, 6.95, 0, -3.71405, 0)
 mesh = SubResource("PlaneMesh_43xy8")
 skin = SubResource("Skin_kd743")
+
+[node name="Player1Cursor" parent="." instance=ExtResource("3_sofki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.925663)
+
+[node name="Player2Cursor" parent="." instance=ExtResource("4_fn1bx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.64534)

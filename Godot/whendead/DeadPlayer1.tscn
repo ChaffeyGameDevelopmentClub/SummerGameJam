@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2iafspofv8gk"]
+
+[ext_resource type="Texture2D" uid="uid://crabqyvqd68t3" path="res://Assets/Art/Art/Player1/PlayerRed.png" id="1_3emim"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4g2ce"]
+size = Vector3(0.177979, 0.0441895, 0.190918)
+
+[node name="Player1Cursor" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+axis = 1
+texture_filter = 0
+texture = ExtResource("1_3emim")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00134277, 0.00622559, 0.00170898)
+shape = SubResource("BoxShape3D_4g2ce")
