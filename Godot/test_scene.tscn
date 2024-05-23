@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bj4ug52mg1hn4"]
+[gd_scene load_steps=4 format=3 uid="uid://bj4ug52mg1hn4"]
 
 [ext_resource type="PackedScene" uid="uid://fqqkgwt4gpjo" path="res://booker.tscn" id="1_em1l0"]
+[ext_resource type="PackedScene" uid="uid://duxo2xttlv2w5" path="res://test_rag_doll.tscn" id="2_3t205"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_has2e"]
 
@@ -19,4 +20,7 @@ mesh = SubResource("PlaneMesh_has2e")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.138751, 0, -0.131746)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.972059, 0.234735, 0, -0.234735, 0.972059, 0, 2.07109, 3.73188)
+transform = Transform3D(1, 0, 0, 0, 0.972059, 0.234735, 0, -0.234735, 0.972059, 0, 2.07109, 21.0558)
+
+[node name="TestRagDoll" parent="." instance=ExtResource("2_3t205")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.29992, 3)

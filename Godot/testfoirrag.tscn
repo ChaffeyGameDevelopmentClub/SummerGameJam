@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://rh6dfbwglkev"]
+
+[ext_resource type="PackedScene" uid="uid://duxo2xttlv2w5" path="res://test_rag_doll.tscn" id="1_gl7dd"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6l4sr"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+use_collision = true
+mesh = SubResource("PlaneMesh_6l4sr")
+
+[node name="TestRagDoll" parent="." instance=ExtResource("1_gl7dd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568182, 4.53748, -0.658508)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.19045, 6.93858)

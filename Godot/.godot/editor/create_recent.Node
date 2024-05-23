@@ -1,7 +1,12 @@
-MeshInstance3D
-SoftBody3D
 Camera3D
 CSGMesh3D
 CollisionShape3D
+SoftBody3D
+RigidBody3D
+BoneAttachment3D
+Node
+PhysicalBone3D
+Bone2D
+MeshInstance3D
 StaticBody3D
 CharacterBody3D

@@ -1,24 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716437234
+::res://::1716439916
+booker.gd::GDScript::-1::1716439537::0::1::::<>CharacterBody3D<>::
+booker.tscn::PackedScene::384963942106509020::1716439889::0::1::::<><>::res://booker.gd<>uid://oyglcv5malk::::res://Assets/Art/Booker_mBody_Alb.png<>uid://b5gg4lhpqrxie::::res://Assets/Art/Booker_mBody_Rgh.png<>uid://cwoxw4vm4ai2p::::res://Assets/Art/Booker_mBody_Nrm.png<>uid://dxqywnoyfyxxl::::res://Assets/Art/booker_cap.tres<>uid://dkidjiajhlsi3::::res://Assets/Art/Booker_mCloth_Alb.png<>uid://ddi70h0u3ps8a::::res://Assets/Art/Booker_mCloth_Mtl.png-mCloth_Rgh.png<>uid://bheheskidcf71::::res://Assets/Art/Booker_mCloth_Nrm.png<>uid://bmr3a77b3cch3::::res://Assets/Art/Booker_mEye_Alb.png<>uid://djvm6uowoa8au::::res://Assets/Art/Booker_mEye_Nrm.png<>uid://de73b20l7ieh2::::res://Assets/Art/Booker_mMouth_Alb.png<>uid://fv7k1r5f7sqw::::res://Assets/Art/Booker_mMouth_Nrm.png
+test_scene.tscn::PackedScene::3079213903886381795::1716439888::0::1::::<><>::uid://fqqkgwt4gpjo::::res://booker.tscn
 ::res://Assets/::1716436429
-::res://Assets/Art/::1716437215
+::res://Assets/Art/::1716439888
 Booker.glb::PackedScene::3055462443689032701::1716436867::1716437236::1::::<><>::uid://oyglcv5malk::::res://Assets/Art/Booker_mBody_Alb.png<>uid://b5gg4lhpqrxie::::res://Assets/Art/Booker_mBody_Rgh.png<>uid://cwoxw4vm4ai2p::::res://Assets/Art/Booker_mBody_Nrm.png<>uid://4rr4su0b0tv1::::res://Assets/Art/Booker_mCap_Alb.png<>uid://dsdbvpd6aeqp0::::res://Assets/Art/Booker_mCap_Mtl.png-mCap_Rgh.png<>uid://ds4eedvmu3xo1::::res://Assets/Art/Booker_mCap_Nrm.png<>uid://dkidjiajhlsi3::::res://Assets/Art/Booker_mCloth_Alb.png<>uid://ddi70h0u3ps8a::::res://Assets/Art/Booker_mCloth_Mtl.png-mCloth_Rgh.png<>uid://bheheskidcf71::::res://Assets/Art/Booker_mCloth_Nrm.png<>uid://bmr3a77b3cch3::::res://Assets/Art/Booker_mEye_Alb.png<>uid://djvm6uowoa8au::::res://Assets/Art/Booker_mEye_Nrm.png<>uid://de73b20l7ieh2::::res://Assets/Art/Booker_mMouth_Alb.png<>uid://fv7k1r5f7sqw::::res://Assets/Art/Booker_mMouth_Nrm.png
-icon.svg::CompressedTexture2D::2450782574881315458::1716436429::1716437235::1::::<><>::
-Booker_mBody_Nrm.png::CompressedTexture2D::6347334550481323733::1716437235::1716437236::1::::<><>::
+booker_cap.tres::ArrayMesh::8808132699640223493::1716439888::0::1::::<><>::uid://4rr4su0b0tv1::::res://Assets/Art/Booker_mCap_Alb.png<>uid://dsdbvpd6aeqp0::::res://Assets/Art/Booker_mCap_Mtl.png-mCap_Rgh.png<>uid://ds4eedvmu3xo1::::res://Assets/Art/Booker_mCap_Nrm.png
 Booker_mBody_Alb.png::CompressedTexture2D::30369792987827808::1716437235::1716437236::1::::<><>::
+Booker_mBody_Nrm.png::CompressedTexture2D::6347334550481323733::1716437235::1716437236::1::::<><>::
 Booker_mBody_Rgh.png::CompressedTexture2D::4504888938612362264::1716437235::1716437236::1::::<><>::
-Booker_mCap_Nrm.png::CompressedTexture2D::8482778393162327602::1716437235::1716437236::1::::<><>::
 Booker_mCap_Alb.png::CompressedTexture2D::2071655841676845352::1716437235::1716437236::1::::<><>::
 Booker_mCap_Mtl.png-mCap_Rgh.png::CompressedTexture2D::8428953382384174487::1716437235::1716437236::1::::<><>::
-Booker_mCloth_Nrm.png::CompressedTexture2D::2886433223536476334::1716437235::1716437236::1::::<><>::
+Booker_mCap_Nrm.png::CompressedTexture2D::8482778393162327602::1716437235::1716437236::1::::<><>::
 Booker_mCloth_Alb.png::CompressedTexture2D::7877864153221076444::1716437235::1716437236::1::::<><>::
 Booker_mCloth_Mtl.png-mCloth_Rgh.png::CompressedTexture2D::7388331599872326562::1716437235::1716437236::1::::<><>::
-Booker_mEye_Nrm.png::CompressedTexture2D::7835098613293690168::1716437235::1716437236::1::::<><>::
+Booker_mCloth_Nrm.png::CompressedTexture2D::2886433223536476334::1716437235::1716437236::1::::<><>::
 Booker_mEye_Alb.png::CompressedTexture2D::3265483035229846786::1716437235::1716437236::1::::<><>::
-Booker_mMouth_Nrm.png::CompressedTexture2D::396258345972795342::1716437235::1716437236::1::::<><>::
+Booker_mEye_Nrm.png::CompressedTexture2D::7835098613293690168::1716437235::1716437236::1::::<><>::
 Booker_mMouth_Alb.png::CompressedTexture2D::7507780832646147449::1716437236::1716437236::1::::<><>::
+Booker_mMouth_Nrm.png::CompressedTexture2D::396258345972795342::1716437235::1716437236::1::::<><>::
+ExtendoFist.glb::PackedScene::5453911026340043850::1716439557::1716439573::1::::<><>::
+icon.svg::CompressedTexture2D::2450782574881315458::1716436429::1716437235::1::::<><>::
 ::res://Assets/Art/Sectioned Keys/::1716436429
-::res://Assets/Art/Sectioned Keys/keys/::1716437215
+::res://Assets/Art/Sectioned Keys/keys/::1716437235
 Back.png::CompressedTexture2D::1928560633419716596::1716436429::1716437235::1::::<><>::
 Enter.png::CompressedTexture2D::5932228454044701775::1716436429::1716437235::1::::<><>::
 ::res://Scenes/::1716436429

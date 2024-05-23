@@ -1,3 +1,5 @@
 res://booker.tscn
+res://Assets/Art/booker_cap.tres
 res://test_scene.tscn
-res://booker.gd
+res://test_rag_doll.tscn
+res://testfoirrag.tscn

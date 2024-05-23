@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://duxo2xttlv2w5"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_neqd1"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dp54d"]
+
+[node name="TestRagDoll" type="RigidBody3D"]
+
+[node name="SoftBody3D" type="SoftBody3D" parent="."]
+mesh = SubResource("CylinderMesh_neqd1")
+parent_collision_ignore = NodePath("..")
+linear_stiffness = 1.0
+pressure_coefficient = 10.0
+pinned_points = [390, 456, 191, 159, 180, 144]
+attachments/0/point_index = 390
+attachments/0/spatial_attachment_path = NodePath("..")
+attachments/0/offset = Vector3(0, 1, 0)
+attachments/1/point_index = 456
+attachments/1/spatial_attachment_path = NodePath("..")
+attachments/1/offset = Vector3(0, -1, 0)
+attachments/2/point_index = 191
+attachments/2/spatial_attachment_path = NodePath("..")
+attachments/2/offset = Vector3(-0.145142, 0.2, 0.47847)
+attachments/3/point_index = 159
+attachments/3/spatial_attachment_path = NodePath("..")
+attachments/3/offset = Vector3(0.145142, 0.2, -0.47847)
+attachments/4/point_index = 180
+attachments/4/spatial_attachment_path = NodePath("..")
+attachments/4/offset = Vector3(-0.490393, 0.2, 0.0975452)
+attachments/5/point_index = 144
+attachments/5/spatial_attachment_path = NodePath("..")
+attachments/5/offset = Vector3(0.490393, 0.2, 0.0975452)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_dp54d")
