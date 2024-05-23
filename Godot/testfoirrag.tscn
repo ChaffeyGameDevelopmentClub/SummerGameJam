@@ -19,4 +19,4 @@ mesh = SubResource("PlaneMesh_6l4sr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.568182, 4.53748, -0.658508)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.19045, 6.93858)
+transform = Transform3D(0.990708, 0, 0.13601, 0, 1, 0, -0.13601, 0, 0.990708, 0, 3.19045, 8.47782)
