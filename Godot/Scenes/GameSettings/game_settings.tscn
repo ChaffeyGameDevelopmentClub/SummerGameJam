@@ -131,7 +131,7 @@ offset_bottom = -250.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Sam"
+text = "_ _ _"
 
 [node name="Player2Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
 anchors_preset = 4
@@ -144,8 +144,7 @@ offset_bottom = -95.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Ben
-"
+text = "_ _ _"
 
 [node name="Player3Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
 anchors_preset = 4
@@ -158,7 +157,7 @@ offset_bottom = 60.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Aki
+text = "_ _ _
 "
 
 [node name="Player4Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
@@ -172,7 +171,7 @@ offset_bottom = 215.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Eli"
+text = "_ _ _"
 
 [node name="Keyboard" type="Node" parent="."]
 
