@@ -1,2 +1,3 @@
 res://Scenes/GameSettings/PlayerNames.gd
 res://Scenes/GameSettings/game_settings.tscn
+res://Scenes/GameSettings/RadiusBar.gd

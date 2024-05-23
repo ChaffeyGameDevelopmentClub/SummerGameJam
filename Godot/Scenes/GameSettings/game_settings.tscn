@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://ywkqu5myubrk"]
+[gd_scene load_steps=68 format=3 uid="uid://ywkqu5myubrk"]
 
 [ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
 [ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
@@ -61,9 +61,20 @@
 [ext_resource type="Texture2D" uid="uid://bpnsms57rsvi8" path="res://Assets/Art/Sectioned Keys/Pressed Keys/x.png" id="53_gguaq"]
 [ext_resource type="Texture2D" uid="uid://bbjmyi88ks2dk" path="res://Assets/Art/Sectioned Keys/Pressed Keys/y.png" id="55_2rb2o"]
 [ext_resource type="Texture2D" uid="uid://dyh6jtvvs0uoi" path="res://Assets/Art/Sectioned Keys/Pressed Keys/z.png" id="57_6a50d"]
+[ext_resource type="Texture2D" uid="uid://jblywjbibv7x" path="res://Assets/Art/MenuSettingsBg.png" id="62_kf363"]
+[ext_resource type="Script" path="res://Scenes/GameSettings/RadiusBar.gd" id="63_rxxix"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
+
+[sub_resource type="Theme" id="Theme_v3022"]
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_5j2t8"]
+default_font_size = 20
+
+[sub_resource type="Theme" id="Theme_2se43"]
+default_font_size = 30
 
 [node name="GameSettings" type="Control"]
 layout_mode = 3
@@ -79,29 +90,29 @@ grow_vertical = 2
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 55.0
+offset_left = 37.0
 offset_top = -306.0
-offset_right = 215.0
+offset_right = 197.0
 offset_bottom = 186.0
 grow_vertical = 2
 scale = Vector2(1.25, 1.25)
 
-[node name="TextureRect" type="TextureRect" parent="Player Cards/GridContainer"]
+[node name="Player1Card" type="TextureRect" parent="Player Cards/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture = ExtResource("1_r5pfv")
 
-[node name="TextureRect2" type="TextureRect" parent="Player Cards/GridContainer"]
+[node name="Player2Card" type="TextureRect" parent="Player Cards/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture = ExtResource("2_o1wqh")
 
-[node name="TextureRect3" type="TextureRect" parent="Player Cards/GridContainer"]
+[node name="Player3Card" type="TextureRect" parent="Player Cards/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture = ExtResource("3_j3pc7")
 
-[node name="TextureRect4" type="TextureRect" parent="Player Cards/GridContainer"]
+[node name="Player4Card" type="TextureRect" parent="Player Cards/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture = ExtResource("4_v2mwk")
@@ -113,24 +124,26 @@ script = ExtResource("5_d4rvn")
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 77.0
+offset_left = 62.0
 offset_top = -282.0
-offset_right = 171.0
+offset_right = 156.0
 offset_bottom = -250.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Sam"
 
 [node name="Player2Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 138.0
+offset_left = 121.0
 offset_top = -127.0
-offset_right = 231.0
+offset_right = 214.0
 offset_bottom = -95.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Ben
 "
 
@@ -138,12 +151,13 @@ text = "Ben
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 79.0
+offset_left = 62.0
 offset_top = 28.0
-offset_right = 172.0
+offset_right = 155.0
 offset_bottom = 60.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Aki
 "
 
@@ -151,12 +165,13 @@ text = "Aki
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 139.0
+offset_left = 121.0
 offset_top = 183.0
-offset_right = 232.0
+offset_right = 214.0
 offset_bottom = 215.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Eli"
 
 [node name="Keyboard" type="Node" parent="."]
@@ -352,7 +367,109 @@ layout_mode = 2
 texture_normal = ExtResource("37_2vs8i")
 texture_pressed = ExtResource("40_ckcax")
 
-[node name="Game Settings" type="Node" parent="."]
+[node name="BG" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.995
+offset_right = -1.0
+offset_bottom = 0.239929
+texture = ExtResource("62_kf363")
+
+[node name="Map And Item Settings" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="MapSettings" type="Control" parent="Map And Item Settings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 1.0
+offset_right = 20.0
+offset_bottom = 41.0
+grow_horizontal = 2
+
+[node name="MapLabel" type="RichTextLabel" parent="Map And Item Settings/MapSettings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -142.0
+offset_top = 36.0
+offset_right = 142.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme = SubResource("Theme_v3022")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Map Settings"
+
+[node name="RadiusBar" type="Control" parent="Map And Item Settings/MapSettings"]
+anchors_preset = 0
+offset_top = 9.0
+offset_right = 40.0
+offset_bottom = 49.0
+script = ExtResource("63_rxxix")
+
+[node name="BarValRadius" type="RichTextLabel" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 0
+offset_left = -76.0
+offset_top = 152.0
+offset_right = -31.0
+offset_bottom = 184.0
+theme = SubResource("Theme_5j2t8")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "test"
+
+[node name="RadiusBar" type="HScrollBar" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -51.0
+offset_top = 143.0
+offset_right = 108.0
+offset_bottom = 189.0
+grow_horizontal = 2
+min_value = 4.0
+max_value = 20.0
+value = 4.0
+
+[node name="SettingRadius" type="RichTextLabel" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 0
+offset_left = -88.0
+offset_top = 98.0
+offset_right = 123.0
+offset_bottom = 142.0
+theme = SubResource("Theme_2se43")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Map Radius"
+
+[node name="ItemSettings" type="Control" parent="Map And Item Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Item Label" type="RichTextLabel" parent="Map And Item Settings/ItemSettings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 209.0
+offset_top = 36.0
+offset_right = 493.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme = SubResource("Theme_v3022")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Item Settings"
 
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonA" to="Player Cards/PlayerNames" method="_on_texture_button_a_pressed"]
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonB" to="Player Cards/PlayerNames" method="_on_texture_button_b_pressed"]
