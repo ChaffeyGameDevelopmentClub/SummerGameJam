@@ -1,0 +1,501 @@
+[gd_scene load_steps=68 format=3 uid="uid://ywkqu5myubrk"]
+
+[ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
+[ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
+[ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Art/Player3/Player3BottomLeft.png" id="3_j3pc7"]
+[ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Art/Player4/Player4BottomRight.png" id="4_v2mwk"]
+[ext_resource type="Script" path="res://Scenes/GameSettings/PlayerNames.gd" id="5_d4rvn"]
+[ext_resource type="Texture2D" uid="uid://c2nf2qkrvkkrp" path="res://Assets/Art/Sectioned Keys/keys/a.png" id="5_oiinv"]
+[ext_resource type="Texture2D" uid="uid://bw00quaby7uc0" path="res://Assets/Art/Sectioned Keys/Pressed Keys/a.png" id="6_y62wq"]
+[ext_resource type="Texture2D" uid="uid://dv58t0yq0tfiy" path="res://Assets/Art/Sectioned Keys/keys/b.png" id="7_n4j25"]
+[ext_resource type="Texture2D" uid="uid://xmvp2mkhrpks" path="res://Assets/Art/Sectioned Keys/Pressed Keys/b.png" id="8_sywlc"]
+[ext_resource type="Texture2D" uid="uid://yc1uqoggqoet" path="res://Assets/Art/Sectioned Keys/keys/c.png" id="9_jjpxj"]
+[ext_resource type="Texture2D" uid="uid://2cjvuttucs31" path="res://Assets/Art/Sectioned Keys/Pressed Keys/c.png" id="10_nxgjm"]
+[ext_resource type="Texture2D" uid="uid://bmt7qled7qpmi" path="res://Assets/Art/Sectioned Keys/keys/d.png" id="11_2vms7"]
+[ext_resource type="Texture2D" uid="uid://bnw0r87x47uvc" path="res://Assets/Art/Sectioned Keys/Pressed Keys/d.png" id="12_atb67"]
+[ext_resource type="Texture2D" uid="uid://ikeydahmak0h" path="res://Assets/Art/Sectioned Keys/keys/e.png" id="13_br55w"]
+[ext_resource type="Texture2D" uid="uid://qohpvevxh7bt" path="res://Assets/Art/Sectioned Keys/Pressed Keys/e.png" id="14_wit64"]
+[ext_resource type="Texture2D" uid="uid://bxg7r4ftbhmlt" path="res://Assets/Art/Sectioned Keys/keys/f.png" id="15_h0236"]
+[ext_resource type="Texture2D" uid="uid://n1ct1x6raei8" path="res://Assets/Art/Sectioned Keys/keys/g.png" id="16_iooo6"]
+[ext_resource type="Texture2D" uid="uid://bar6pbkhdcbg5" path="res://Assets/Art/Sectioned Keys/keys/h.png" id="17_15rem"]
+[ext_resource type="Texture2D" uid="uid://c4u1yjqaxtvm" path="res://Assets/Art/Sectioned Keys/Pressed Keys/f.png" id="17_pkyoa"]
+[ext_resource type="Texture2D" uid="uid://2tbgk5gjxpyk" path="res://Assets/Art/Sectioned Keys/keys/i.png" id="18_ljwx2"]
+[ext_resource type="Texture2D" uid="uid://by2odyy0s8xqs" path="res://Assets/Art/Sectioned Keys/Pressed Keys/g.png" id="19_5f5hh"]
+[ext_resource type="Texture2D" uid="uid://bops55tbn8sh3" path="res://Assets/Art/Sectioned Keys/keys/j.png" id="19_v2bv8"]
+[ext_resource type="Texture2D" uid="uid://dkh2yfxqgho3d" path="res://Assets/Art/Sectioned Keys/keys/k.png" id="20_3vhpb"]
+[ext_resource type="Texture2D" uid="uid://hoio3kfoh6o3" path="res://Assets/Art/Sectioned Keys/keys/l.png" id="21_id15q"]
+[ext_resource type="Texture2D" uid="uid://c7dlm2t1vkrex" path="res://Assets/Art/Sectioned Keys/Pressed Keys/h.png" id="21_ksji7"]
+[ext_resource type="Texture2D" uid="uid://dkd5juckx2exb" path="res://Assets/Art/Sectioned Keys/keys/m.png" id="22_le8e0"]
+[ext_resource type="Texture2D" uid="uid://ddlv7m2cwa6qp" path="res://Assets/Art/Sectioned Keys/Pressed Keys/i.png" id="23_25tvr"]
+[ext_resource type="Texture2D" uid="uid://cyjyumubdvgj1" path="res://Assets/Art/Sectioned Keys/keys/n.png" id="23_xhvkj"]
+[ext_resource type="Texture2D" uid="uid://dsnr306qebw7e" path="res://Assets/Art/Sectioned Keys/keys/o.png" id="24_003to"]
+[ext_resource type="Texture2D" uid="uid://d01t8jdxv2dj4" path="res://Assets/Art/Sectioned Keys/keys/p.png" id="25_cdvrn"]
+[ext_resource type="Texture2D" uid="uid://8ged5p4hlqfo" path="res://Assets/Art/Sectioned Keys/Pressed Keys/j.png" id="25_egjyl"]
+[ext_resource type="Texture2D" uid="uid://dpvpr37w6o8sn" path="res://Assets/Art/Sectioned Keys/keys/q.png" id="26_vgrok"]
+[ext_resource type="Texture2D" uid="uid://cp4lngopks2h8" path="res://Assets/Art/Sectioned Keys/keys/r.png" id="27_67qkh"]
+[ext_resource type="Texture2D" uid="uid://co7yq3uriohg5" path="res://Assets/Art/Sectioned Keys/Pressed Keys/k.png" id="27_ar6uj"]
+[ext_resource type="Texture2D" uid="uid://csajrn2tvnvjx" path="res://Assets/Art/Sectioned Keys/keys/s.png" id="28_fjnk5"]
+[ext_resource type="Texture2D" uid="uid://cp3v5fehvnqgq" path="res://Assets/Art/Sectioned Keys/Pressed Keys/l.png" id="29_2ityi"]
+[ext_resource type="Texture2D" uid="uid://ct63srrtj3qkm" path="res://Assets/Art/Sectioned Keys/keys/t.png" id="29_eu2sm"]
+[ext_resource type="Texture2D" uid="uid://82q4ar7c5bkd" path="res://Assets/Art/Sectioned Keys/keys/u.png" id="30_ry6t4"]
+[ext_resource type="Texture2D" uid="uid://dj42o0ug37ivj" path="res://Assets/Art/Sectioned Keys/keys/v.png" id="31_dwfx2"]
+[ext_resource type="Texture2D" uid="uid://boq05fci4qeka" path="res://Assets/Art/Sectioned Keys/Pressed Keys/m.png" id="31_senon"]
+[ext_resource type="Texture2D" uid="uid://cpu237uxr1vx" path="res://Assets/Art/Sectioned Keys/keys/w.png" id="32_jtob2"]
+[ext_resource type="Texture2D" uid="uid://etfphbujwutb" path="res://Assets/Art/Sectioned Keys/keys/x.png" id="33_ruq5k"]
+[ext_resource type="Texture2D" uid="uid://c6uvk1kgrsah7" path="res://Assets/Art/Sectioned Keys/Pressed Keys/n.png" id="33_vyeka"]
+[ext_resource type="Texture2D" uid="uid://cc6mg5wx0l14a" path="res://Assets/Art/Sectioned Keys/keys/y.png" id="34_g622b"]
+[ext_resource type="Texture2D" uid="uid://ci5a0fuwwebrk" path="res://Assets/Art/Sectioned Keys/Pressed Keys/o.png" id="35_h7w0t"]
+[ext_resource type="Texture2D" uid="uid://bnxhhi1tud154" path="res://Assets/Art/Sectioned Keys/keys/z.png" id="35_lthnu"]
+[ext_resource type="Texture2D" uid="uid://2qhd2k12xbrg" path="res://Assets/Art/Sectioned Keys/keys/Back.png" id="36_qknld"]
+[ext_resource type="Texture2D" uid="uid://cqru6260g722n" path="res://Assets/Art/Sectioned Keys/keys/Enter.png" id="37_2vs8i"]
+[ext_resource type="Texture2D" uid="uid://blan7hmyyqvy5" path="res://Assets/Art/Sectioned Keys/Pressed Keys/p.png" id="37_231oa"]
+[ext_resource type="Texture2D" uid="uid://ceoptjdpkdv6i" path="res://Assets/Art/Sectioned Keys/Pressed Keys/Back.png" id="38_ovogu"]
+[ext_resource type="Texture2D" uid="uid://dtvhfg8idam84" path="res://Assets/Art/Sectioned Keys/Pressed Keys/q.png" id="39_kb6rw"]
+[ext_resource type="Texture2D" uid="uid://dy12o47t6f2kq" path="res://Assets/Art/Sectioned Keys/Pressed Keys/Enter.png" id="40_ckcax"]
+[ext_resource type="Texture2D" uid="uid://c4eal0m3wcwoq" path="res://Assets/Art/Sectioned Keys/Pressed Keys/r.png" id="41_n8twp"]
+[ext_resource type="Texture2D" uid="uid://cx2kaaopcqvll" path="res://Assets/Art/Sectioned Keys/Pressed Keys/s.png" id="43_sjnao"]
+[ext_resource type="Texture2D" uid="uid://ducy4ft15rsml" path="res://Assets/Art/Sectioned Keys/Pressed Keys/t.png" id="45_jjwg0"]
+[ext_resource type="Texture2D" uid="uid://211ke7o3lah3" path="res://Assets/Art/Sectioned Keys/Pressed Keys/u.png" id="47_qfsg7"]
+[ext_resource type="Texture2D" uid="uid://bwvbt31jukt4m" path="res://Assets/Art/Sectioned Keys/Pressed Keys/v.png" id="49_j5pv8"]
+[ext_resource type="Texture2D" uid="uid://55dk5b8lrb3p" path="res://Assets/Art/Sectioned Keys/Pressed Keys/w.png" id="51_dxwua"]
+[ext_resource type="Texture2D" uid="uid://bpnsms57rsvi8" path="res://Assets/Art/Sectioned Keys/Pressed Keys/x.png" id="53_gguaq"]
+[ext_resource type="Texture2D" uid="uid://bbjmyi88ks2dk" path="res://Assets/Art/Sectioned Keys/Pressed Keys/y.png" id="55_2rb2o"]
+[ext_resource type="Texture2D" uid="uid://dyh6jtvvs0uoi" path="res://Assets/Art/Sectioned Keys/Pressed Keys/z.png" id="57_6a50d"]
+[ext_resource type="Texture2D" uid="uid://jblywjbibv7x" path="res://Assets/Art/MenuSettingsBg.png" id="62_kf363"]
+[ext_resource type="Script" path="res://Scenes/GameSettings/RadiusBar.gd" id="63_rxxix"]
+
+[sub_resource type="Theme" id="Theme_0o3xg"]
+default_font_size = 23
+
+[sub_resource type="Theme" id="Theme_v3022"]
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_5j2t8"]
+default_font_size = 20
+
+[sub_resource type="Theme" id="Theme_2se43"]
+default_font_size = 30
+
+[node name="GameSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player Cards" type="Node" parent="."]
+
+[node name="GridContainer" type="GridContainer" parent="Player Cards"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 37.0
+offset_top = -306.0
+offset_right = 197.0
+offset_bottom = 186.0
+grow_vertical = 2
+scale = Vector2(1.25, 1.25)
+
+[node name="Player1Card" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_r5pfv")
+
+[node name="Player2Card" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_o1wqh")
+
+[node name="Player3Card" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_j3pc7")
+
+[node name="Player4Card" type="TextureRect" parent="Player Cards/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("4_v2mwk")
+
+[node name="PlayerNames" type="Node" parent="Player Cards"]
+script = ExtResource("5_d4rvn")
+
+[node name="Player1Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 62.0
+offset_top = -282.0
+offset_right = 156.0
+offset_bottom = -250.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Sam"
+
+[node name="Player2Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 121.0
+offset_top = -127.0
+offset_right = 214.0
+offset_bottom = -95.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Ben
+"
+
+[node name="Player3Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 62.0
+offset_top = 28.0
+offset_right = 155.0
+offset_bottom = 60.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Aki
+"
+
+[node name="Player4Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 121.0
+offset_top = 183.0
+offset_right = 214.0
+offset_bottom = 215.0
+grow_vertical = 2
+theme = SubResource("Theme_0o3xg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Eli"
+
+[node name="Keyboard" type="Node" parent="."]
+
+[node name="GridContainer" type="GridContainer" parent="Keyboard"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -787.0
+offset_top = -304.0
+offset_right = -591.0
+offset_bottom = -228.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(3.5, 3.5)
+columns = 9
+
+[node name="TextureButtonA" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("5_oiinv")
+texture_pressed = ExtResource("6_y62wq")
+
+[node name="TextureButtonB" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("7_n4j25")
+texture_pressed = ExtResource("8_sywlc")
+
+[node name="TextureButtonC" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("9_jjpxj")
+texture_pressed = ExtResource("10_nxgjm")
+
+[node name="TextureButtonD" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("11_2vms7")
+texture_pressed = ExtResource("12_atb67")
+
+[node name="TextureButtonE" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("13_br55w")
+texture_pressed = ExtResource("14_wit64")
+
+[node name="TextureButtonF" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("15_h0236")
+texture_pressed = ExtResource("17_pkyoa")
+
+[node name="TextureButtonG" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("16_iooo6")
+texture_pressed = ExtResource("19_5f5hh")
+
+[node name="TextureButtonH" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("17_15rem")
+texture_pressed = ExtResource("21_ksji7")
+
+[node name="TextureButtonI" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("18_ljwx2")
+texture_pressed = ExtResource("23_25tvr")
+
+[node name="TextureButtonJ" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("19_v2bv8")
+texture_pressed = ExtResource("25_egjyl")
+
+[node name="TextureButtonK" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("20_3vhpb")
+texture_pressed = ExtResource("27_ar6uj")
+
+[node name="TextureButtonL" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("21_id15q")
+texture_pressed = ExtResource("29_2ityi")
+
+[node name="TextureButtonM" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("22_le8e0")
+texture_pressed = ExtResource("31_senon")
+
+[node name="TextureButtonN" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("23_xhvkj")
+texture_pressed = ExtResource("33_vyeka")
+
+[node name="TextureButtonO" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("24_003to")
+texture_pressed = ExtResource("35_h7w0t")
+
+[node name="TextureButtonP" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("25_cdvrn")
+texture_pressed = ExtResource("37_231oa")
+
+[node name="TextureButtonQ" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("26_vgrok")
+texture_pressed = ExtResource("39_kb6rw")
+
+[node name="TextureButtonR" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("27_67qkh")
+texture_pressed = ExtResource("41_n8twp")
+
+[node name="TextureButtonS" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("28_fjnk5")
+texture_pressed = ExtResource("43_sjnao")
+
+[node name="TextureButtonT" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("29_eu2sm")
+texture_pressed = ExtResource("45_jjwg0")
+
+[node name="TextureButton21Fake" type="TextureButton" parent="Keyboard/GridContainer"]
+visible = false
+texture_filter = 1
+layout_mode = 2
+
+[node name="TextureButtonU" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("30_ry6t4")
+texture_pressed = ExtResource("47_qfsg7")
+
+[node name="TextureButtonV" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("31_dwfx2")
+texture_pressed = ExtResource("49_j5pv8")
+
+[node name="TextureButtonW" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("32_jtob2")
+texture_pressed = ExtResource("51_dxwua")
+
+[node name="TextureButtonx" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("33_ruq5k")
+texture_pressed = ExtResource("53_gguaq")
+
+[node name="TextureButtonY" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("34_g622b")
+texture_pressed = ExtResource("55_2rb2o")
+
+[node name="TextureButtonZ" type="TextureButton" parent="Keyboard/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("35_lthnu")
+texture_pressed = ExtResource("57_6a50d")
+
+[node name="GridContainer2" type="GridContainer" parent="Keyboard/GridContainer"]
+layout_mode = 2
+
+[node name="TextureButtonDelete" type="TextureButton" parent="Keyboard/GridContainer/GridContainer2"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("36_qknld")
+texture_pressed = ExtResource("38_ovogu")
+
+[node name="TextureButtonEnter" type="TextureButton" parent="Keyboard/GridContainer/GridContainer2"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("37_2vs8i")
+texture_pressed = ExtResource("40_ckcax")
+
+[node name="BG" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.995
+offset_right = -1.0
+offset_bottom = 0.239929
+texture = ExtResource("62_kf363")
+
+[node name="Map And Item Settings" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="MapSettings" type="Control" parent="Map And Item Settings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 1.0
+offset_right = 20.0
+offset_bottom = 41.0
+grow_horizontal = 2
+
+[node name="MapLabel" type="RichTextLabel" parent="Map And Item Settings/MapSettings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -142.0
+offset_top = 36.0
+offset_right = 142.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme = SubResource("Theme_v3022")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Map Settings"
+
+[node name="RadiusBar" type="Control" parent="Map And Item Settings/MapSettings"]
+anchors_preset = 0
+offset_top = 9.0
+offset_right = 40.0
+offset_bottom = 49.0
+script = ExtResource("63_rxxix")
+
+[node name="BarValRadius" type="RichTextLabel" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 0
+offset_left = -76.0
+offset_top = 152.0
+offset_right = -31.0
+offset_bottom = 184.0
+theme = SubResource("Theme_5j2t8")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "test"
+
+[node name="RadiusBar" type="HScrollBar" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -51.0
+offset_top = 143.0
+offset_right = 108.0
+offset_bottom = 189.0
+grow_horizontal = 2
+min_value = 4.0
+max_value = 20.0
+value = 4.0
+
+[node name="SettingRadius" type="RichTextLabel" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 0
+offset_left = -88.0
+offset_top = 98.0
+offset_right = 123.0
+offset_bottom = 142.0
+theme = SubResource("Theme_2se43")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Map Radius"
+
+[node name="ItemSettings" type="Control" parent="Map And Item Settings"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Item Label" type="RichTextLabel" parent="Map And Item Settings/ItemSettings"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 209.0
+offset_top = 36.0
+offset_right = 493.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme = SubResource("Theme_v3022")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Item Settings"
+
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonA" to="Player Cards/PlayerNames" method="_on_texture_button_a_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonB" to="Player Cards/PlayerNames" method="_on_texture_button_b_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonC" to="Player Cards/PlayerNames" method="_on_texture_button_c_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonD" to="Player Cards/PlayerNames" method="_on_texture_button_d_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonE" to="Player Cards/PlayerNames" method="_on_texture_button_e_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonF" to="Player Cards/PlayerNames" method="_on_texture_button_f_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonG" to="Player Cards/PlayerNames" method="_on_texture_button_g_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonH" to="Player Cards/PlayerNames" method="_on_texture_button_h_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonI" to="Player Cards/PlayerNames" method="_on_texture_button_i_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonJ" to="Player Cards/PlayerNames" method="_on_texture_button_j_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonK" to="Player Cards/PlayerNames" method="_on_texture_button_k_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonL" to="Player Cards/PlayerNames" method="_on_texture_button_l_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonM" to="Player Cards/PlayerNames" method="_on_texture_button_m_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonN" to="Player Cards/PlayerNames" method="_on_texture_button_n_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonO" to="Player Cards/PlayerNames" method="_on_texture_button_o_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonP" to="Player Cards/PlayerNames" method="_on_texture_button_p_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonQ" to="Player Cards/PlayerNames" method="_on_texture_button_q_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonR" to="Player Cards/PlayerNames" method="_on_texture_button_r_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonS" to="Player Cards/PlayerNames" method="_on_texture_button_s_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonT" to="Player Cards/PlayerNames" method="_on_texture_button_t_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonU" to="Player Cards/PlayerNames" method="_on_texture_button_u_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonV" to="Player Cards/PlayerNames" method="_on_texture_button_v_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonW" to="Player Cards/PlayerNames" method="_on_texture_button_w_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonx" to="Player Cards/PlayerNames" method="_on_texture_buttonx_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonY" to="Player Cards/PlayerNames" method="_on_texture_button_y_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/TextureButtonZ" to="Player Cards/PlayerNames" method="_on_texture_button_z_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/GridContainer2/TextureButtonDelete" to="Player Cards/PlayerNames" method="_on_texture_button_delete_pressed"]
+[connection signal="pressed" from="Keyboard/GridContainer/GridContainer2/TextureButtonEnter" to="Player Cards/PlayerNames" method="_on_texture_button_enter_pressed"]
