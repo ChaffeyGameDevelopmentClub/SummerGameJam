@@ -1,10 +1,10 @@
 [gd_scene load_steps=68 format=3 uid="uid://ywkqu5myubrk"]
 
-[ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
-[ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
-[ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Art/Player3/Player3BottomLeft.png" id="3_j3pc7"]
-[ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Art/Player4/Player4BottomRight.png" id="4_v2mwk"]
-[ext_resource type="Script" path="res://Scenes/GameSettings/PlayerNames.gd" id="5_d4rvn"]
+[ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Player1/Player1TopLeft.png" id="1_r5pfv"]
+[ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Player2/Player2TopRight.png" id="2_o1wqh"]
+[ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Player3/Player3BottomLeft.png" id="3_j3pc7"]
+[ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Player4/Player4BottomRight.png" id="4_v2mwk"]
+[ext_resource type="Script" path="res://script/Luna/PlayerNames.gd" id="5_d4rvn"]
 [ext_resource type="Texture2D" uid="uid://c2nf2qkrvkkrp" path="res://Assets/Art/Sectioned Keys/keys/a.png" id="5_oiinv"]
 [ext_resource type="Texture2D" uid="uid://bw00quaby7uc0" path="res://Assets/Art/Sectioned Keys/Pressed Keys/a.png" id="6_y62wq"]
 [ext_resource type="Texture2D" uid="uid://dv58t0yq0tfiy" path="res://Assets/Art/Sectioned Keys/keys/b.png" id="7_n4j25"]
@@ -62,7 +62,7 @@
 [ext_resource type="Texture2D" uid="uid://bbjmyi88ks2dk" path="res://Assets/Art/Sectioned Keys/Pressed Keys/y.png" id="55_2rb2o"]
 [ext_resource type="Texture2D" uid="uid://dyh6jtvvs0uoi" path="res://Assets/Art/Sectioned Keys/Pressed Keys/z.png" id="57_6a50d"]
 [ext_resource type="Texture2D" uid="uid://jblywjbibv7x" path="res://Assets/Art/MenuSettingsBg.png" id="62_kf363"]
-[ext_resource type="Script" path="res://Scenes/GameSettings/RadiusBar.gd" id="63_rxxix"]
+[ext_resource type="Script" path="res://script/Luna/RadiusBar.gd" id="63_rxxix"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
@@ -131,7 +131,7 @@ offset_bottom = -250.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Sam"
+text = "_ _ _"
 
 [node name="Player2Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
 anchors_preset = 4
@@ -144,7 +144,7 @@ offset_bottom = -95.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Ben
+text = "_ _ _
 "
 
 [node name="Player3Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
@@ -158,7 +158,7 @@ offset_bottom = 60.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Aki
+text = "_ _ _
 "
 
 [node name="Player4Name" type="RichTextLabel" parent="Player Cards/PlayerNames"]
@@ -172,7 +172,7 @@ offset_bottom = 215.0
 grow_vertical = 2
 theme = SubResource("Theme_0o3xg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "Eli"
+text = "_ _ _"
 
 [node name="Keyboard" type="Node" parent="."]
 

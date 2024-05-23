@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt8pnpywyoeej"
-path="res://.godot/imported/Player4BottomRight.png-6984d2ac24c4bbf446830b9d9344727d.ctex"
+uid="uid://dgh5bp0mcvs60"
+path="res://.godot/imported/icon.png-392e7c1f61e0757541f1668da605ccd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Player4/Player4BottomRight.png"
-dest_files=["res://.godot/imported/Player4BottomRight.png-6984d2ac24c4bbf446830b9d9344727d.ctex"]
+source_file="res://random shit prob benny/icon.png"
+dest_files=["res://.godot/imported/icon.png-392e7c1f61e0757541f1668da605ccd1.ctex"]
 
 [params]
 
