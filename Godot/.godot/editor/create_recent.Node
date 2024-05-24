@@ -1,4 +1,10 @@
+MarginContainer
+VSlider
+VBoxContainer
+Container
+TextureButton
 TextureRect
+Button
 Control
 Container
 RichTextLabel

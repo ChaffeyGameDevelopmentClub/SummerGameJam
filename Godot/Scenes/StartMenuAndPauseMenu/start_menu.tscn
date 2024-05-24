@@ -1,12 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctotr8nek3fko"]
+[gd_scene load_steps=6 format=3 uid="uid://ctotr8nek3fko"]
 
+<<<<<<< HEAD:Godot/start_menu.tscn
+[ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="2_287c5"]
+[ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="2_fesc8"]
+[ext_resource type="Texture2D" uid="uid://bu7tiicpf5hut" path="res://Assets/Animals-5-23-2024.png" id="3_b781y"]
+=======
 [ext_resource type="Script" path="res://Scripts/Lizzy/start_menu.gd" id="1_vi8q3"]
 [ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="2_oue1f"]
 [ext_resource type="Texture2D" uid="uid://b4q3o5rfvevwj" path="res://Assets/A.png" id="3_8ekyb"]
 [ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="4_ht8u2"]
+>>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258:Godot/Scenes/StartMenuAndPauseMenu/start_menu.tscn
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bawla"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.223529, 0.25098, 0.27451, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 3
@@ -14,17 +20,21 @@ border_width_bottom = 3
 border_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybhai"]
-bg_color = Color(0.0235294, 0.0235294, 0.0235294, 1)
+bg_color = Color(0.223529, 0.25098, 0.27451, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0.372549, 0.803922, 0.894118, 1)
 
+<<<<<<< HEAD:Godot/start_menu.tscn
+[node name="Menu" type="Control"]
+=======
 [node name="StartMenu" type="CanvasLayer"]
 script = ExtResource("1_vi8q3")
 
 [node name="Menu" type="Control" parent="."]
+>>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258:Godot/Scenes/StartMenuAndPauseMenu/start_menu.tscn
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -32,8 +42,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+<<<<<<< HEAD:Godot/start_menu.tscn
+[node name="MMBG" type="TextureRect" parent="."]
+=======
 [node name="TextureRect2" type="TextureRect" parent="Menu"]
 texture_filter = 1
+>>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258:Godot/Scenes/StartMenuAndPauseMenu/start_menu.tscn
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -42,29 +56,32 @@ offset_right = -2.0
 offset_bottom = 0.239929
 texture = ExtResource("2_oue1f")
 
-[node name="TextureRect" type="TextureRect" parent="Menu"]
+[node name="Title" type="TextureRect" parent="."]
 layout_mode = 2
+<<<<<<< HEAD:Godot/start_menu.tscn
+offset_left = 372.0
+offset_top = 140.0
+offset_right = 758.0
+offset_bottom = 247.0
+texture = ExtResource("3_b781y")
+=======
 offset_left = 246.0
 offset_top = 99.0
 offset_right = 375.0
 offset_bottom = 219.0
 texture = ExtResource("3_8ekyb")
+>>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258:Godot/Scenes/StartMenuAndPauseMenu/start_menu.tscn
 expand_mode = 1
 
-[node name="StartGame" type="ColorRect" parent="Menu"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 401.0
-offset_top = 382.0
-offset_right = 767.0
-offset_bottom = 455.0
-color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+offset_left = 400.0
+offset_top = 400.0
+offset_right = 752.0
+offset_bottom = 510.0
 
-[node name="Button" type="Button" parent="Menu/StartGame"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 359.0
-offset_bottom = 65.0
+[node name="SGButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
 theme_override_fonts/font = ExtResource("4_ht8u2")
@@ -73,20 +90,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bawla")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ybhai")
 text = "Start Game"
 
-[node name="Exit" type="ColorRect" parent="Menu"]
-layout_mode = 0
-offset_left = 401.0
-offset_top = 500.0
-offset_right = 767.0
-offset_bottom = 573.0
-color = Color(0.0392157, 0.0392157, 0.0392157, 1)
-
-[node name="Button" type="Button" parent="Menu/Exit"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 359.0
-offset_bottom = 65.0
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
 theme_override_fonts/font = ExtResource("4_ht8u2")
@@ -95,6 +100,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bawla")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ybhai")
 text = "Exit
 "
+<<<<<<< HEAD:Godot/start_menu.tscn
+=======
 
 [node name="Exit2" type="ColorRect" parent="Menu"]
 layout_mode = 0
@@ -121,3 +128,4 @@ text = "Exit
 
 [connection signal="pressed" from="Menu/Exit/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Menu/Exit2/Button" to="." method="_on_button_pressed"]
+>>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258:Godot/Scenes/StartMenuAndPauseMenu/start_menu.tscn
