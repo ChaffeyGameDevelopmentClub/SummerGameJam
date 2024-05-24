@@ -3,7 +3,7 @@ extends Node
 @export var bomb: PackedScene
 
 func _ready():
-	AdrianGlobal.connect("bomb_press",spawn_bomb)
+	Global.connect("Punch_1",spawn_bomb)
 
 
 

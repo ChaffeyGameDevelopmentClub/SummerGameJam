@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://2t3fyv7qrj1o"]
+[gd_scene load_steps=5 format=3 uid="uid://2t3fyv7qrj1o"]
 
 [ext_resource type="Script" path="res://Scenes/whendead/bomb_spawner.gd" id="1_1ftqi"]
-[ext_resource type="PackedScene" uid="uid://c0hsbd2gam8pu" path="res://placeholders/Bomb_1.glb" id="2_vvx23"]
 [ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://Scenes/whendead/dead_timer.tscn" id="3_ngn6d"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_43xy8"]
@@ -20,7 +19,6 @@ current = true
 
 [node name="BombSpawner" type="Node" parent="."]
 script = ExtResource("1_1ftqi")
-bomb = ExtResource("2_vvx23")
 
 [node name="DeadTimer" parent="." instance=ExtResource("3_ngn6d")]
 

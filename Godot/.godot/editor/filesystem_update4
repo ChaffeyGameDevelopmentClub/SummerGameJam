@@ -1,1 +1,7 @@
 res://Scenes/GameSettings/game_settings.tscn
+res://Scenes/whendead/test_scene.tscn
+res://Items/Item scenes/bomb.tscn
+res://Scenes/whendead/bomb_spawner.gd
+res://script/Adrain/dead_timer_script.gd
+res://script/global.gd
+res://Scenes/whendead/dead_timer.tscn
