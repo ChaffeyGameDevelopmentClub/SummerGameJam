@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://ywkqu5myubrk"]
+[gd_scene load_steps=72 format=3 uid="uid://ywkqu5myubrk"]
 
 [ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
 [ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
@@ -63,6 +63,9 @@
 [ext_resource type="Texture2D" uid="uid://dyh6jtvvs0uoi" path="res://Assets/Art/Sectioned Keys/Pressed Keys/z.png" id="57_6a50d"]
 [ext_resource type="Texture2D" uid="uid://jblywjbibv7x" path="res://Assets/Art/MenuSettingsBg.png" id="62_kf363"]
 [ext_resource type="Script" path="res://Scripts/Luna/RadiusBar.gd" id="63_rxxix"]
+[ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="64_gfmt1"]
+[ext_resource type="Texture2D" uid="uid://dlqoyt2hvlitk" path="res://Assets/Art/Sectioned Keys/keys/right.png" id="65_yv30v"]
+[ext_resource type="Texture2D" uid="uid://babbunfr3xd72" path="res://Assets/Art/Sectioned Keys/Pressed Keys/right.png" id="66_3iwro"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
@@ -76,6 +79,9 @@ default_font_size = 20
 [sub_resource type="Theme" id="Theme_2se43"]
 default_font_size = 30
 
+[sub_resource type="Theme" id="Theme_6ip7u"]
+default_font_size = 30
+
 [node name="GameSettings" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -83,6 +89,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.995
+offset_right = -1.0
+offset_bottom = 0.239929
+texture = ExtResource("62_kf363")
 
 [node name="Player Cards" type="Node" parent="."]
 
@@ -366,16 +382,6 @@ layout_mode = 2
 texture_normal = ExtResource("37_2vs8i")
 texture_pressed = ExtResource("40_ckcax")
 
-[node name="BG" type="TextureRect" parent="."]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 0.995
-offset_right = -1.0
-offset_bottom = 0.239929
-texture = ExtResource("62_kf363")
-
 [node name="Map And Item Settings" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 5
@@ -413,10 +419,20 @@ text = "Map Settings"
 
 [node name="RadiusBar" type="Control" parent="Map And Item Settings/MapSettings"]
 anchors_preset = 0
-offset_top = 9.0
-offset_right = 40.0
-offset_bottom = 49.0
+offset_left = -9.0
+offset_top = 13.0
+offset_right = 31.0
+offset_bottom = 53.0
 script = ExtResource("63_rxxix")
+
+[node name="TextureRect" type="TextureRect" parent="Map And Item Settings/MapSettings/RadiusBar"]
+layout_mode = 0
+offset_left = -114.0
+offset_top = 91.0
+offset_right = 152.0
+offset_bottom = 201.0
+texture = ExtResource("64_gfmt1")
+expand_mode = 1
 
 [node name="BarValRadius" type="RichTextLabel" parent="Map And Item Settings/MapSettings/RadiusBar"]
 layout_mode = 0
@@ -469,6 +485,60 @@ grow_horizontal = 2
 theme = SubResource("Theme_v3022")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Item Settings"
+
+[node name="StartGame" type="Control" parent="Map And Item Settings"]
+texture_filter = 1
+anchors_preset = 0
+offset_left = 418.0
+offset_top = 212.0
+offset_right = 458.0
+offset_bottom = 252.0
+scale = Vector2(4, 4)
+
+[node name="TextureRect" type="TextureRect" parent="Map And Item Settings/StartGame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.0
+offset_top = -9.0
+offset_right = 19.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("64_gfmt1")
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Map And Item Settings/StartGame"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -19.25
+offset_top = -5.5
+offset_right = 155.75
+offset_bottom = 90.5
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+theme = SubResource("Theme_6ip7u")
+text = "Start Game"
+
+[node name="Next Page" type="TextureButton" parent="Map And Item Settings/StartGame"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("65_yv30v")
+texture_pressed = ExtResource("66_3iwro")
 
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonA" to="Player Cards/PlayerNames" method="_on_texture_button_a_pressed"]
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonB" to="Player Cards/PlayerNames" method="_on_texture_button_b_pressed"]
