@@ -1,11 +1,2 @@
-<<<<<<< HEAD
 res://start_menu.tscn
 res://pauseMenu.tscn
-res://pauseMenu.gd
-=======
-res://Scenes/GameSettings/PlayerNames.gd
-res://Scenes/GameSettings/game_settings.tscn
-res://Scenes/GameSettings/RadiusBar.gd
-res://Scenes/StartMenuAndPauseMenu/pauseMenu.tscn
-res://Scenes/StartMenuAndPauseMenu/start_menu.tscn
->>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258
