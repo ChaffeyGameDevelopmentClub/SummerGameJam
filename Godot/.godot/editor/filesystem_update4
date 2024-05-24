@@ -1,1 +1,3 @@
+res://Scenes/Start&PauseMenu/pauseMenu.tscn
 res://Scenes/Start&PauseMenu/start_menu.tscn
+res://Scripts/Lizzy/pauseMenu.gd
