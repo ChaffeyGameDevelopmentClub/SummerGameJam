@@ -1,9 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://2t3fyv7qrj1o"]
+[gd_scene load_steps=17 format=3 uid="uid://2t3fyv7qrj1o"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerDeadscript/bomb_spawner.gd" id="1_1ftqi"]
-[ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://whendead/dead_timer.tscn" id="3_ngn6d"]
-[ext_resource type="PackedScene" uid="uid://d2iafspofv8gk" path="res://whendead/DeadPlayer1.tscn" id="3_sofki"]
-[ext_resource type="PackedScene" uid="uid://c8v8urb8jo38c" path="res://whendead/DeadPlayer2.tscn" id="4_fn1bx"]
+[ext_resource type="PackedScene" uid="uid://tdwswcrnkfy7" path="res://Scenes/DeadScene/dead_timer.tscn" id="3_ngn6d"]
+[ext_resource type="PackedScene" uid="uid://d2iafspofv8gk" path="res://Scenes/DeadScene/DeadPlayer1.tscn" id="3_sofki"]
+[ext_resource type="PackedScene" uid="uid://c8v8urb8jo38c" path="res://Scenes/DeadScene/DeadPlayer2.tscn" id="4_fn1bx"]
+[ext_resource type="PackedScene" uid="uid://bwxrtup7mbom3" path="res://Scenes/DeadScene/DeadPlayer3.tscn" id="5_6gu26"]
+[ext_resource type="PackedScene" uid="uid://cduopgveux7tm" path="res://Scenes/DeadScene/DeadPlayer4.tscn" id="6_b117g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hx4iq"]
 resource_name = "Material.001"
@@ -183,3 +185,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.925663)
 
 [node name="Player2Cursor" parent="." instance=ExtResource("4_fn1bx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.64534)
+
+[node name="Player3Cursor" parent="." instance=ExtResource("5_6gu26")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.75468, 0, 0)
+
+[node name="Player4Cursor" parent="." instance=ExtResource("6_b117g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.23524, 0, 0)

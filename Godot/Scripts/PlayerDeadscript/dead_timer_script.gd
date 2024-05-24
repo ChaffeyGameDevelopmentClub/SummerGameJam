@@ -27,7 +27,8 @@ func _process(_delta):
 	#Player 1 Input
 	if Input.is_action_just_released("DrobBombP1"):
 			if AdrianGlobal.coin1 >= 10:
-				AdrianGlobal.emit_signal("bomb_press")
+				var location = $"../Player1Cursor".global_position
+				AdrianGlobal.emit_signal("bomb_press",location)
 				AdrianGlobal.coin1 -= 10
 				$CoinPlayer1.start()
 			else:
@@ -36,7 +37,8 @@ func _process(_delta):
 	#Player 2 Input
 	if Input.is_action_just_released("DropBombP2"):
 			if AdrianGlobal.coin2 >= 10:
-				AdrianGlobal.emit_signal("bomb_press")
+				var location = $"../Player2Cursor".global_position
+				AdrianGlobal.emit_signal("bomb_press",location)
 				AdrianGlobal.coin2 -= 10
 				$CoinPlayer1.start()
 			else:
@@ -45,7 +47,8 @@ func _process(_delta):
 	#Player 3 Input
 	if Input.is_action_just_released("DropBombP3"):
 			if AdrianGlobal.coin3 >= 10:
-				AdrianGlobal.emit_signal("bomb_press")
+				var location = $"../Player3Cursor".global_position
+				AdrianGlobal.emit_signal("bomb_press",location)
 				AdrianGlobal.coin3 -= 10
 				$CoinPlayer1.start()
 			else:
@@ -54,7 +57,8 @@ func _process(_delta):
 	#Player 4 Input
 	if Input.is_action_just_released("DropBombP4"):
 			if AdrianGlobal.coin4 >= 10:
-				AdrianGlobal.emit_signal("bomb_press")
+				var location = $"../Player4Cursor".global_position
+				AdrianGlobal.emit_signal("bomb_press",location)
 				AdrianGlobal.coin4 -= 10
 				$CoinPlayer1.start()
 			else:
