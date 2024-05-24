@@ -1,9 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctotr8nek3fko"]
 
-[ext_resource type="Script" path="res://start_menu.gd" id="1_bu8fx"]
+[ext_resource type="Script" path="res://Scripts/Lizzy/start_menu.gd" id="1_bu8fx"]
 [ext_resource type="Texture2D" uid="uid://b4q3o5rfvevwj" path="res://Assets/A.png" id="1_itlb5"]
 [ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="2_287c5"]
 [ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="2_fesc8"]
+
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bawla"]
 bg_color = Color(1, 1, 1, 1)

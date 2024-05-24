@@ -1,7 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://y4g0aelia2r3"]
 
 [ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="1_j4dsj"]
-[ext_resource type="Script" path="res://pauseMenu.gd" id="1_mg7f2"]
+[ext_resource type="Script" path="res://Scripts/Lizzy/pauseMenu.gd" id="1_mg7f2"]
+
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6rh"]
 bg_color = Color(0, 0, 0, 1)
