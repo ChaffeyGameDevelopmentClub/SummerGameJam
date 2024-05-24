@@ -32,7 +32,7 @@ func _process(_delta):
 				print("NO WORK")
 
 
-#Checks if players coins are less than 10
+#Checks if players coins are less than limit
 func _on_coin_player_1_timeout()-> void:
 	#player 1 coins
 	#if player1 is dead:
