@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://script/Lizzy/pauseMenu.gd" id="1_o3phk"]
 [ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="2_jhyjk"]
 
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6rh"]
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 2
@@ -20,7 +19,7 @@ border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0.372549, 0.803922, 0.894118, 1)
 
-[node name="Control" type="Control"]
+[node name="pauseMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
