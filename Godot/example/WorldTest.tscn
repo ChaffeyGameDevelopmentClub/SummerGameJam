@@ -1,7 +1,8 @@
 [gd_scene load_steps=16 format=3 uid="uid://bmhqnfqnfjgy5"]
 
-[ext_resource type="PackedScene" uid="uid://cpuwtlf3iqct3" path="res://player.tscn" id="1_780p0"]
+[ext_resource type="PackedScene" uid="uid://cpuwtlf3iqct3" path="res://Scenes/player/player.tscn" id="1_780p0"]
 [ext_resource type="Script" path="res://example/Bomb tester.gd" id="2_mg774"]
+
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_10kov"]
 
