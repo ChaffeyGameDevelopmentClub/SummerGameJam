@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 res://test_scene.tscn
 res://Assets/Art/booker_cap.tres
 res://booker.tscn
 res://test_rag_doll.tscn
 res://testfoirrag.tscn
 res://test_ragdoll.tscn
+=======
+res://booker.tscn
+res://test_scene.tscn
+res://booker.gd
+>>>>>>> parent of 59da286 (testing ragdoll)

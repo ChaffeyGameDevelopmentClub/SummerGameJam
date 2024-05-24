@@ -19,4 +19,8 @@ mesh = SubResource("PlaneMesh_has2e")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.138751, 0, -0.131746)
 
 [node name="Camera3D" type="Camera3D" parent="."]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 0.972059, 0.234735, 0, -0.234735, 0.972059, 0, 2.07109, 6.59872)
+=======
+transform = Transform3D(1, 0, 0, 0, 0.972059, 0.234735, 0, -0.234735, 0.972059, 0, 2.07109, 3.73188)
+>>>>>>> parent of 59da286 (testing ragdoll)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 SoftBody3D
 CollisionShape3D
 CharacterBody3D
@@ -9,4 +10,11 @@ Node
 PhysicalBone3D
 Bone2D
 MeshInstance3D
+=======
+MeshInstance3D
+SoftBody3D
+Camera3D
+CSGMesh3D
+CollisionShape3D
+>>>>>>> parent of 59da286 (testing ragdoll)
 StaticBody3D
