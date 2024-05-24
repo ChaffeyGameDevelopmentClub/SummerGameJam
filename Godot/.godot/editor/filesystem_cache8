@@ -1,16 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716509003
-pauseMenu.gd::GDScript::-1::1716509003::0::1::::<>Control<>::
-pauseMenu.tscn::PackedScene::1744808155674461738::1716508712::0::1::::<><>::uid://cvpaetv3oobqs::::res://Assets/Beyblade Metal Fight Font.ttf<>res://pauseMenu.gd
+<<<<<<< HEAD
+::res://::1716513859
+pauseMenu.gd::GDScript::-1::1716513931::0::1::::<>Control<>::
+pauseMenu.tscn::PackedScene::1744808155674461738::1716513953::0::1::::<><>::uid://cvpaetv3oobqs::::res://Assets/Beyblade Metal Fight Font.ttf<>res://pauseMenu.gd<>uid://d3q26muhubeis::::res://Assets/Art/MainMenuBG.png<>res://SGButton.gd
+SGButton.gd::GDScript::-1::1716513859::0::1::::<>Button<>::
 start_menu.gd::GDScript::-1::1716509003::0::1::::<>CanvasLayer<>::
-start_menu.tscn::PackedScene::6136516419973824182::1716508712::0::1::::<><>::res://start_menu.gd<>uid://b4q3o5rfvevwj::::res://Assets/A.png<>uid://cvpaetv3oobqs::::res://Assets/Beyblade Metal Fight Font.ttf
-::res://Assets/::1716509003
+start_menu.tscn::PackedScene::6136516419973824182::1716513810::0::1::::<><>::res://start_menu.gd<>uid://cvpaetv3oobqs::::res://Assets/Beyblade Metal Fight Font.ttf<>uid://d3q26muhubeis::::res://Assets/Art/MainMenuBG.png<>uid://bu7tiicpf5hut::::res://Assets/Animals-5-23-2024.png
+::res://Assets/::1716511421
 A.png::CompressedTexture2D::4456653872390727961::1716509003::1716509003::1::::<><>::
+Animals-5-23-2024.png::CompressedTexture2D::3857425977763274487::1716511395::1716511421::1::::<><>::
 Beyblade Metal Fight Font.ttf::FontFile::6277780924947396422::1716509003::1716509003::1::::<><>::
 custom-terraria-logo.png::CompressedTexture2D::1321631336240995082::1716509003::1716509003::1::::<><>::
 fontbolt.png::CompressedTexture2D::4164566078841907878::1716509003::1716509003::1::::<><>::
 M-5-17-2024.png::CompressedTexture2D::232770317602140753::1716509003::1716509003::1::::<><>::
-::res://Assets/Art/::1716508984
+::res://Assets/Art/::1716509052
 baseball.png::CompressedTexture2D::3540690868078031705::1716508984::1716508984::1::::<><>::
 Coin.png::CompressedTexture2D::5002147804244725468::1716508984::1716508984::1::::<><>::
 icon.svg::CompressedTexture2D::2450782574881315458::1716508984::1716509052::1::::<><>::
@@ -93,3 +96,102 @@ z.png::CompressedTexture2D::8860144272955152892::1716508984::1716508984::1::::<>
 game_settings.tscn::PackedScene::1730585397921455600::1716508984::0::1::::<><>::uid://cfg2wswiicd2r::::res://Assets/Art/Player1/Player1TopLeft.png<>uid://c3lc6kbwjq8ua::::res://Assets/Art/Player2/Player2TopRight.png<>uid://c5wrpsyjjhsm::::res://Assets/Art/Player3/Player3BottomLeft.png<>uid://dt8pnpywyoeej::::res://Assets/Art/Player4/Player4BottomRight.png<>res://Scenes/GameSettings/PlayerNames.gd<>uid://c2nf2qkrvkkrp::::res://Assets/Art/Sectioned Keys/keys/a.png<>uid://bw00quaby7uc0::::res://Assets/Art/Sectioned Keys/Pressed Keys/a.png<>uid://dv58t0yq0tfiy::::res://Assets/Art/Sectioned Keys/keys/b.png<>uid://xmvp2mkhrpks::::res://Assets/Art/Sectioned Keys/Pressed Keys/b.png<>uid://yc1uqoggqoet::::res://Assets/Art/Sectioned Keys/keys/c.png<>uid://2cjvuttucs31::::res://Assets/Art/Sectioned Keys/Pressed Keys/c.png<>uid://bmt7qled7qpmi::::res://Assets/Art/Sectioned Keys/keys/d.png<>uid://bnw0r87x47uvc::::res://Assets/Art/Sectioned Keys/Pressed Keys/d.png<>uid://ikeydahmak0h::::res://Assets/Art/Sectioned Keys/keys/e.png<>uid://qohpvevxh7bt::::res://Assets/Art/Sectioned Keys/Pressed Keys/e.png<>uid://bxg7r4ftbhmlt::::res://Assets/Art/Sectioned Keys/keys/f.png<>uid://n1ct1x6raei8::::res://Assets/Art/Sectioned Keys/keys/g.png<>uid://bar6pbkhdcbg5::::res://Assets/Art/Sectioned Keys/keys/h.png<>uid://c4u1yjqaxtvm::::res://Assets/Art/Sectioned Keys/Pressed Keys/f.png<>uid://2tbgk5gjxpyk::::res://Assets/Art/Sectioned Keys/keys/i.png<>uid://by2odyy0s8xqs::::res://Assets/Art/Sectioned Keys/Pressed Keys/g.png<>uid://bops55tbn8sh3::::res://Assets/Art/Sectioned Keys/keys/j.png<>uid://dkh2yfxqgho3d::::res://Assets/Art/Sectioned Keys/keys/k.png<>uid://hoio3kfoh6o3::::res://Assets/Art/Sectioned Keys/keys/l.png<>uid://c7dlm2t1vkrex::::res://Assets/Art/Sectioned Keys/Pressed Keys/h.png<>uid://dkd5juckx2exb::::res://Assets/Art/Sectioned Keys/keys/m.png<>uid://ddlv7m2cwa6qp::::res://Assets/Art/Sectioned Keys/Pressed Keys/i.png<>uid://cyjyumubdvgj1::::res://Assets/Art/Sectioned Keys/keys/n.png<>uid://dsnr306qebw7e::::res://Assets/Art/Sectioned Keys/keys/o.png<>uid://d01t8jdxv2dj4::::res://Assets/Art/Sectioned Keys/keys/p.png<>uid://8ged5p4hlqfo::::res://Assets/Art/Sectioned Keys/Pressed Keys/j.png<>uid://dpvpr37w6o8sn::::res://Assets/Art/Sectioned Keys/keys/q.png<>uid://cp4lngopks2h8::::res://Assets/Art/Sectioned Keys/keys/r.png<>uid://co7yq3uriohg5::::res://Assets/Art/Sectioned Keys/Pressed Keys/k.png<>uid://csajrn2tvnvjx::::res://Assets/Art/Sectioned Keys/keys/s.png<>uid://cp3v5fehvnqgq::::res://Assets/Art/Sectioned Keys/Pressed Keys/l.png<>uid://ct63srrtj3qkm::::res://Assets/Art/Sectioned Keys/keys/t.png<>uid://82q4ar7c5bkd::::res://Assets/Art/Sectioned Keys/keys/u.png<>uid://dj42o0ug37ivj::::res://Assets/Art/Sectioned Keys/keys/v.png<>uid://boq05fci4qeka::::res://Assets/Art/Sectioned Keys/Pressed Keys/m.png<>uid://cpu237uxr1vx::::res://Assets/Art/Sectioned Keys/keys/w.png<>uid://etfphbujwutb::::res://Assets/Art/Sectioned Keys/keys/x.png<>uid://c6uvk1kgrsah7::::res://Assets/Art/Sectioned Keys/Pressed Keys/n.png<>uid://cc6mg5wx0l14a::::res://Assets/Art/Sectioned Keys/keys/y.png<>uid://ci5a0fuwwebrk::::res://Assets/Art/Sectioned Keys/Pressed Keys/o.png<>uid://bnxhhi1tud154::::res://Assets/Art/Sectioned Keys/keys/z.png<>uid://2qhd2k12xbrg::::res://Assets/Art/Sectioned Keys/keys/Back.png<>uid://cqru6260g722n::::res://Assets/Art/Sectioned Keys/keys/Enter.png<>uid://blan7hmyyqvy5::::res://Assets/Art/Sectioned Keys/Pressed Keys/p.png<>uid://ceoptjdpkdv6i::::res://Assets/Art/Sectioned Keys/Pressed Keys/Back.png<>uid://dtvhfg8idam84::::res://Assets/Art/Sectioned Keys/Pressed Keys/q.png<>uid://dy12o47t6f2kq::::res://Assets/Art/Sectioned Keys/Pressed Keys/Enter.png<>uid://c4eal0m3wcwoq::::res://Assets/Art/Sectioned Keys/Pressed Keys/r.png<>uid://cx2kaaopcqvll::::res://Assets/Art/Sectioned Keys/Pressed Keys/s.png<>uid://ducy4ft15rsml::::res://Assets/Art/Sectioned Keys/Pressed Keys/t.png<>uid://211ke7o3lah3::::res://Assets/Art/Sectioned Keys/Pressed Keys/u.png<>uid://bwvbt31jukt4m::::res://Assets/Art/Sectioned Keys/Pressed Keys/v.png<>uid://55dk5b8lrb3p::::res://Assets/Art/Sectioned Keys/Pressed Keys/w.png<>uid://bpnsms57rsvi8::::res://Assets/Art/Sectioned Keys/Pressed Keys/x.png<>uid://bbjmyi88ks2dk::::res://Assets/Art/Sectioned Keys/Pressed Keys/y.png<>uid://dyh6jtvvs0uoi::::res://Assets/Art/Sectioned Keys/Pressed Keys/z.png<>uid://jblywjbibv7x::::res://Assets/Art/MenuSettingsBg.png<>res://Scenes/GameSettings/RadiusBar.gd
 PlayerNames.gd::GDScript::-1::1716508984::0::1::::<>Node<>::
 RadiusBar.gd::GDScript::-1::1716508984::0::1::::<>Control<>::
+=======
+::res://::1716509458
+::res://Assets/::1716509312
+A.png::CompressedTexture2D::4456653872390727961::1716509312::1716509312::1::::<><>::
+Beyblade Metal Fight Font.ttf::FontFile::6277780924947396422::1716509312::1716509312::1::::<><>::
+custom-terraria-logo.png::CompressedTexture2D::1321631336240995082::1716509312::1716509312::1::::<><>::
+fontbolt.png::CompressedTexture2D::4164566078841907878::1716509312::1716509312::1::::<><>::
+M-5-17-2024.png::CompressedTexture2D::232770317602140753::1716509312::1716509312::1::::<><>::
+::res://Assets/Art/::1716509224
+baseball.png::CompressedTexture2D::3540690868078031705::1716508939::1716508939::1::::<><>::
+Coin.png::CompressedTexture2D::5002147804244725468::1716508939::1716508939::1::::<><>::
+icon.svg::CompressedTexture2D::2450782574881315458::1716508939::1716509224::1::::<><>::
+Keyboard Letters and Symbols.png::CompressedTexture2D::1022928779223987814::1716508939::1716508939::1::::<><>::
+MainMenuBG.png::CompressedTexture2D::9159275096946021594::1716508939::1716508939::1::::<><>::
+MenuSettingsBg.png::CompressedTexture2D::634475885943633555::1716508939::1716508939::1::::<><>::
+::res://Assets/Art/Player1/::1716508939
+Player1TopLeft.png::CompressedTexture2D::5137851478151581763::1716508939::1716508939::1::::<><>::
+PlayerRed.png::CompressedTexture2D::5966142292661526670::1716508939::1716508939::1::::<><>::
+::res://Assets/Art/Player2/::1716508939
+Player2TopRight.png::CompressedTexture2D::6761014465932931004::1716508939::1716508939::1::::<><>::
+PlayerBlue.png::CompressedTexture2D::1055789094412753823::1716508939::1716508939::1::::<><>::
+::res://Assets/Art/Player3/::1716508939
+Player3BottomLeft.png::CompressedTexture2D::203675968994674788::1716508939::1716508939::1::::<><>::
+PlayerYellow.png::CompressedTexture2D::8751701091955813613::1716508939::1716508939::1::::<><>::
+::res://Assets/Art/Player4/::1716508939
+Player4BottomRight.png::CompressedTexture2D::8561909342255916241::1716508939::1716508939::1::::<><>::
+PlayerGreen.png::CompressedTexture2D::3852928399129105162::1716508939::1716508939::1::::<><>::
+::res://Assets/Art/Sectioned Keys/::1716508939
+::res://Assets/Art/Sectioned Keys/keys/::1716508939
+a.png::CompressedTexture2D::6695129714437635001::1716508939::1716508939::1::::<><>::
+b.png::CompressedTexture2D::8697198041865450468::1716508939::1716508939::1::::<><>::
+Back.png::CompressedTexture2D::1928560633419716596::1716508939::1716508939::1::::<><>::
+c.png::CompressedTexture2D::1690276222793062643::1716508939::1716508939::1::::<><>::
+d.png::CompressedTexture2D::3269882085263415484::1716508939::1716508939::1::::<><>::
+e.png::CompressedTexture2D::582440411573787041::1716508939::1716508939::1::::<><>::
+Enter.png::CompressedTexture2D::5932228454044701775::1716508939::1716508939::1::::<><>::
+f.png::CompressedTexture2D::4015125187923189665::1716508939::1716508939::1::::<><>::
+g.png::CompressedTexture2D::966285555538527217::1716508939::1716508939::1::::<><>::
+h.png::CompressedTexture2D::2423424187489982350::1716508939::1716508939::1::::<><>::
+i.png::CompressedTexture2D::1934393959173401598::1716508939::1716508939::1::::<><>::
+j.png::CompressedTexture2D::3401178245739308426::1716508939::1716508939::1::::<><>::
+k.png::CompressedTexture2D::7877283648478986827::1716508939::1716508939::1::::<><>::
+l.png::CompressedTexture2D::520735417427909292::1716508939::1716508939::1::::<><>::
+m.png::CompressedTexture2D::7869182256692712615::1716508939::1716508939::1::::<><>::
+n.png::CompressedTexture2D::6477446599416577500::1716508939::1716508939::1::::<><>::
+o.png::CompressedTexture2D::8450581700178098596::1716508939::1716508939::1::::<><>::
+p.png::CompressedTexture2D::8968869996115798691::1716508939::1716508939::1::::<><>::
+q.png::CompressedTexture2D::8256389273002064533::1716508939::1716508939::1::::<><>::
+r.png::CompressedTexture2D::5886232416528612491::1716508939::1716508939::1::::<><>::
+s.png::CompressedTexture2D::6036818089707209205::1716508939::1716508939::1::::<><>::
+t.png::CompressedTexture2D::6172158247007466544::1716508939::1716508939::1::::<><>::
+u.png::CompressedTexture2D::2372993327041649963::1716508939::1716508939::1::::<><>::
+v.png::CompressedTexture2D::7852494302899830771::1716508939::1716508939::1::::<><>::
+w.png::CompressedTexture2D::172607430905411393::1716508939::1716508939::1::::<><>::
+x.png::CompressedTexture2D::320309293881550423::1716508939::1716508939::1::::<><>::
+y.png::CompressedTexture2D::4977955694479834890::1716508939::1716508939::1::::<><>::
+z.png::CompressedTexture2D::3346794320079461177::1716508939::1716508939::1::::<><>::
+::res://Assets/Art/Sectioned Keys/Pressed Keys/::1716508939
+a.png::CompressedTexture2D::3983732235648739149::1716508939::1716508939::1::::<><>::
+b.png::CompressedTexture2D::1640419217612632666::1716508939::1716508939::1::::<><>::
+Back.png::CompressedTexture2D::5083443193510461010::1716508939::1716508939::1::::<><>::
+c.png::CompressedTexture2D::1899812569050281866::1716508939::1716508939::1::::<><>::
+d.png::CompressedTexture2D::3345842028681728076::1716508939::1716508939::1::::<><>::
+e.png::CompressedTexture2D::1152375702778056189::1716508939::1716508939::1::::<><>::
+Enter.png::CompressedTexture2D::8899134053432820680::1716508939::1716508939::1::::<><>::
+f.png::CompressedTexture2D::201506687832191514::1716508939::1716508939::1::::<><>::
+g.png::CompressedTexture2D::4127547824442910678::1716508939::1716508939::1::::<><>::
+h.png::CompressedTexture2D::7025768262204242307::1716508939::1716508939::1::::<><>::
+i.png::CompressedTexture2D::7393869611651337867::1716508939::1716508939::1::::<><>::
+j.png::CompressedTexture2D::2328867932132211104::1716508939::1716508939::1::::<><>::
+k.png::CompressedTexture2D::5823032549310985622::1716508939::1716508939::1::::<><>::
+l.png::CompressedTexture2D::5884805498878213300::1716508939::1716508939::1::::<><>::
+m.png::CompressedTexture2D::3403666303436049844::1716508939::1716508939::1::::<><>::
+n.png::CompressedTexture2D::6991277371384732142::1716508939::1716508939::1::::<><>::
+o.png::CompressedTexture2D::5396328388501853584::1716508939::1716508939::1::::<><>::
+p.png::CompressedTexture2D::3159344817346658210::1716508939::1716508939::1::::<><>::
+q.png::CompressedTexture2D::8536636327442217503::1716508939::1716508939::1::::<><>::
+r.png::CompressedTexture2D::6816596320561436596::1716508939::1716508939::1::::<><>::
+s.png::CompressedTexture2D::6443530162660344917::1716508939::1716508939::1::::<><>::
+t.png::CompressedTexture2D::8568676968387842643::1716508939::1716508939::1::::<><>::
+u.png::CompressedTexture2D::1950369359784493410::1716508939::1716508939::1::::<><>::
+v.png::CompressedTexture2D::3974023334896808674::1716508939::1716508939::1::::<><>::
+w.png::CompressedTexture2D::2167798229440160867::1716508939::1716508939::1::::<><>::
+x.png::CompressedTexture2D::3467205577704837413::1716508939::1716508939::1::::<><>::
+y.png::CompressedTexture2D::2475960862763404524::1716508939::1716508939::1::::<><>::
+z.png::CompressedTexture2D::8860144272955152892::1716508939::1716508939::1::::<><>::
+::res://Scenes/::1716509398
+::res://Scenes/GameSettings/::1716508939
+game_settings.tscn::PackedScene::1730585397921455600::1716508939::0::1::::<><>::uid://cfg2wswiicd2r::::res://Assets/Art/Player1/Player1TopLeft.png<>uid://c3lc6kbwjq8ua::::res://Assets/Art/Player2/Player2TopRight.png<>uid://c5wrpsyjjhsm::::res://Assets/Art/Player3/Player3BottomLeft.png<>uid://dt8pnpywyoeej::::res://Assets/Art/Player4/Player4BottomRight.png<>res://Scenes/GameSettings/PlayerNames.gd<>uid://c2nf2qkrvkkrp::::res://Assets/Art/Sectioned Keys/keys/a.png<>uid://bw00quaby7uc0::::res://Assets/Art/Sectioned Keys/Pressed Keys/a.png<>uid://dv58t0yq0tfiy::::res://Assets/Art/Sectioned Keys/keys/b.png<>uid://xmvp2mkhrpks::::res://Assets/Art/Sectioned Keys/Pressed Keys/b.png<>uid://yc1uqoggqoet::::res://Assets/Art/Sectioned Keys/keys/c.png<>uid://2cjvuttucs31::::res://Assets/Art/Sectioned Keys/Pressed Keys/c.png<>uid://bmt7qled7qpmi::::res://Assets/Art/Sectioned Keys/keys/d.png<>uid://bnw0r87x47uvc::::res://Assets/Art/Sectioned Keys/Pressed Keys/d.png<>uid://ikeydahmak0h::::res://Assets/Art/Sectioned Keys/keys/e.png<>uid://qohpvevxh7bt::::res://Assets/Art/Sectioned Keys/Pressed Keys/e.png<>uid://bxg7r4ftbhmlt::::res://Assets/Art/Sectioned Keys/keys/f.png<>uid://n1ct1x6raei8::::res://Assets/Art/Sectioned Keys/keys/g.png<>uid://bar6pbkhdcbg5::::res://Assets/Art/Sectioned Keys/keys/h.png<>uid://c4u1yjqaxtvm::::res://Assets/Art/Sectioned Keys/Pressed Keys/f.png<>uid://2tbgk5gjxpyk::::res://Assets/Art/Sectioned Keys/keys/i.png<>uid://by2odyy0s8xqs::::res://Assets/Art/Sectioned Keys/Pressed Keys/g.png<>uid://bops55tbn8sh3::::res://Assets/Art/Sectioned Keys/keys/j.png<>uid://dkh2yfxqgho3d::::res://Assets/Art/Sectioned Keys/keys/k.png<>uid://hoio3kfoh6o3::::res://Assets/Art/Sectioned Keys/keys/l.png<>uid://c7dlm2t1vkrex::::res://Assets/Art/Sectioned Keys/Pressed Keys/h.png<>uid://dkd5juckx2exb::::res://Assets/Art/Sectioned Keys/keys/m.png<>uid://ddlv7m2cwa6qp::::res://Assets/Art/Sectioned Keys/Pressed Keys/i.png<>uid://cyjyumubdvgj1::::res://Assets/Art/Sectioned Keys/keys/n.png<>uid://dsnr306qebw7e::::res://Assets/Art/Sectioned Keys/keys/o.png<>uid://d01t8jdxv2dj4::::res://Assets/Art/Sectioned Keys/keys/p.png<>uid://8ged5p4hlqfo::::res://Assets/Art/Sectioned Keys/Pressed Keys/j.png<>uid://dpvpr37w6o8sn::::res://Assets/Art/Sectioned Keys/keys/q.png<>uid://cp4lngopks2h8::::res://Assets/Art/Sectioned Keys/keys/r.png<>uid://co7yq3uriohg5::::res://Assets/Art/Sectioned Keys/Pressed Keys/k.png<>uid://csajrn2tvnvjx::::res://Assets/Art/Sectioned Keys/keys/s.png<>uid://cp3v5fehvnqgq::::res://Assets/Art/Sectioned Keys/Pressed Keys/l.png<>uid://ct63srrtj3qkm::::res://Assets/Art/Sectioned Keys/keys/t.png<>uid://82q4ar7c5bkd::::res://Assets/Art/Sectioned Keys/keys/u.png<>uid://dj42o0ug37ivj::::res://Assets/Art/Sectioned Keys/keys/v.png<>uid://boq05fci4qeka::::res://Assets/Art/Sectioned Keys/Pressed Keys/m.png<>uid://cpu237uxr1vx::::res://Assets/Art/Sectioned Keys/keys/w.png<>uid://etfphbujwutb::::res://Assets/Art/Sectioned Keys/keys/x.png<>uid://c6uvk1kgrsah7::::res://Assets/Art/Sectioned Keys/Pressed Keys/n.png<>uid://cc6mg5wx0l14a::::res://Assets/Art/Sectioned Keys/keys/y.png<>uid://ci5a0fuwwebrk::::res://Assets/Art/Sectioned Keys/Pressed Keys/o.png<>uid://bnxhhi1tud154::::res://Assets/Art/Sectioned Keys/keys/z.png<>uid://2qhd2k12xbrg::::res://Assets/Art/Sectioned Keys/keys/Back.png<>uid://cqru6260g722n::::res://Assets/Art/Sectioned Keys/keys/Enter.png<>uid://blan7hmyyqvy5::::res://Assets/Art/Sectioned Keys/Pressed Keys/p.png<>uid://ceoptjdpkdv6i::::res://Assets/Art/Sectioned Keys/Pressed Keys/Back.png<>uid://dtvhfg8idam84::::res://Assets/Art/Sectioned Keys/Pressed Keys/q.png<>uid://dy12o47t6f2kq::::res://Assets/Art/Sectioned Keys/Pressed Keys/Enter.png<>uid://c4eal0m3wcwoq::::res://Assets/Art/Sectioned Keys/Pressed Keys/r.png<>uid://cx2kaaopcqvll::::res://Assets/Art/Sectioned Keys/Pressed Keys/s.png<>uid://ducy4ft15rsml::::res://Assets/Art/Sectioned Keys/Pressed Keys/t.png<>uid://211ke7o3lah3::::res://Assets/Art/Sectioned Keys/Pressed Keys/u.png<>uid://bwvbt31jukt4m::::res://Assets/Art/Sectioned Keys/Pressed Keys/v.png<>uid://55dk5b8lrb3p::::res://Assets/Art/Sectioned Keys/Pressed Keys/w.png<>uid://bpnsms57rsvi8::::res://Assets/Art/Sectioned Keys/Pressed Keys/x.png<>uid://bbjmyi88ks2dk::::res://Assets/Art/Sectioned Keys/Pressed Keys/y.png<>uid://dyh6jtvvs0uoi::::res://Assets/Art/Sectioned Keys/Pressed Keys/z.png<>uid://jblywjbibv7x::::res://Assets/Art/MenuSettingsBg.png<>res://Scenes/GameSettings/RadiusBar.gd
+PlayerNames.gd::GDScript::-1::1716508939::0::1::::<>Node<>::
+RadiusBar.gd::GDScript::-1::1716508939::0::1::::<>Control<>::
+::res://Scenes/StartMenuAndPauseMenu/::1716509458
+pauseMenu.tscn::PackedScene::1744808155674461738::1716509465::0::1::::<><>::res://Scripts/pauseMenu.gd<>uid://cvpaetv3oobqs::::res://Assets/Beyblade Metal Fight Font.ttf
+start_menu.tscn::PackedScene::6136516419973824182::1716509465::0::1::::<><>::res://Scripts/start_menu.gd<>uid://d3q26muhubeis::::res://Assets/Art/MainMenuBG.png<>uid://b4q3o5rfvevwj::::res://Assets/A.png<>uid://cvpaetv3oobqs::::res://Assets/Beyblade Metal Fight Font.ttf
+::res://Scripts/::1716509463
+pauseMenu.gd::GDScript::-1::1716509312::0::1::::<>Control<>::
+start_menu.gd::GDScript::-1::1716509312::0::1::::<>CanvasLayer<>::
+::res://Scripts/Lizzy/::1716509463
+>>>>>>> 6fff18f4d1e0fc2ad8497ca3071a8c32bf83a258
