@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://y4g0aelia2r3"]
 
 [ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="1_j4dsj"]
-[ext_resource type="Script" path="res://Scripts/Lizzy/pauseMenu.gd" id="1_mg7f2"]
+[ext_resource type="Script" path="res://script/Lizzy/pauseMenu.gd" id="1_x3iam"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6rh"]
 bg_color = Color(0, 0, 0, 1)
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mg7f2")
+script = ExtResource("1_x3iam")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

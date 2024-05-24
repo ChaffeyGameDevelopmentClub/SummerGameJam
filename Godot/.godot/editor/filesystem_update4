@@ -1,6 +1,5 @@
+res://Scenes/Start&PauseMenu/pauseMenu.tscn
+res://Scenes/Start&PauseMenu/start_menu.tscn
+res://Scenes/Start&PauseMenu/start_menu.gd
 res://Scenes/GameSettings/game_settings.tscn
-res://Items/Item scenes/bomb.tscn
-res://Scenes/whendead/test_scene.tscn
-res://Scenes/whendead/dead_timer.tscn
-res://Scenes/whendead/bomb_spawner.gd
-res://script/Adrain/dead_timer_script.gd
+res://script/Lizzy/pauseMenu.gd

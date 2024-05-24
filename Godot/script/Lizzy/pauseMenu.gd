@@ -1,15 +1,17 @@
 extends Control
-
 @onready var pause_Menu = $"."
-
 var paused = false
+# Called when the node enters the scene tree for the first time.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if Input.is_action_pressed("Pause"):
+		print('pause')
+		pauseMenu()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pause_Menu.hide()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 func pauseMenu(): 
 	if paused:
@@ -20,11 +22,15 @@ func pauseMenu():
 		pause_Menu.show()
 		paused = true
 		Engine.time_scale = 0
+		
+	
 
-func _on_button_resume_pressed():
-	pauseMenu()
-func _on_button_quit_pressed():
+func _on_button_pressed():
 	get_tree().quit()
-func _on_main_menu_pressed():
+
+func _on_mm_button_pressed():
 	Engine.time_scale = 1
-	get_tree().change_scene_to_file("res://Scenes/StartMenuAndPauseMenu/start_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Start&PauseMenu/start_menu.tscn")
+	
+func _on_resume_button_pressed():
+	pauseMenu()

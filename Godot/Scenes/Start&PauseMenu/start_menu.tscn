@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ctotr8nek3fko"]
+[gd_scene load_steps=7 format=3 uid="uid://ctotr8nek3fko"]
 
 [ext_resource type="Texture2D" uid="uid://b4q3o5rfvevwj" path="res://Assets/A.png" id="1_itlb5"]
+[ext_resource type="Script" path="res://Scenes/Start&PauseMenu/start_menu.gd" id="1_l6pv5"]
 [ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="2_287c5"]
 [ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="2_fesc8"]
 
@@ -27,6 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_l6pv5")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 1
@@ -78,3 +80,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bawla")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ybhai")
 text = "Exit
 "
+
+[connection signal="pressed" from="VBoxContainer/SGButton" to="." method="_on_sg_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/EButton" to="." method="_on_e_button_pressed"]
