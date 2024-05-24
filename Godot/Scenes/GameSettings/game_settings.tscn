@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bw00quaby7uc0" path="res://Assets/Art/Sectioned Keys/Pressed Keys/a.png" id="6_y62wq"]
 [ext_resource type="Texture2D" uid="uid://dv58t0yq0tfiy" path="res://Assets/Art/Sectioned Keys/keys/b.png" id="7_n4j25"]
 [ext_resource type="Texture2D" uid="uid://xmvp2mkhrpks" path="res://Assets/Art/Sectioned Keys/Pressed Keys/b.png" id="8_sywlc"]
-[ext_resource type="Script" path="res://Scenes/GameSettings/TextureButtonA.gd" id="9_7p54w"]
+[ext_resource type="Script" path="res://script/Luna/TextureButtonA.gd" id="9_7p54w"]
 [ext_resource type="Texture2D" uid="uid://cyo25p1vu1rcx" path="res://Assets/Art/Sectioned Keys/Hovered/a.png" id="9_eavau"]
 [ext_resource type="Texture2D" uid="uid://yc1uqoggqoet" path="res://Assets/Art/Sectioned Keys/keys/c.png" id="9_jjpxj"]
 [ext_resource type="Texture2D" uid="uid://2cjvuttucs31" path="res://Assets/Art/Sectioned Keys/Pressed Keys/c.png" id="10_nxgjm"]
