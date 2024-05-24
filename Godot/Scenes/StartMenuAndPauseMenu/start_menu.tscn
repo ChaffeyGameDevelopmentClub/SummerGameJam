@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctotr8nek3fko"]
 
-[ext_resource type="Script" path="res://start_menu.gd" id="1_bu8fx"]
-[ext_resource type="Texture2D" uid="uid://b4q3o5rfvevwj" path="res://Assets/A.png" id="1_itlb5"]
-[ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="2_287c5"]
-[ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="2_fesc8"]
+[ext_resource type="Script" path="res://Scripts/Lizzy/start_menu.gd" id="1_vi8q3"]
+[ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="2_oue1f"]
+[ext_resource type="Texture2D" uid="uid://b4q3o5rfvevwj" path="res://Assets/A.png" id="3_8ekyb"]
+[ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="4_ht8u2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bawla"]
 bg_color = Color(1, 1, 1, 1)
@@ -22,7 +22,7 @@ border_width_bottom = 3
 border_color = Color(0.372549, 0.803922, 0.894118, 1)
 
 [node name="StartMenu" type="CanvasLayer"]
-script = ExtResource("1_bu8fx")
+script = ExtResource("1_vi8q3")
 
 [node name="Menu" type="Control" parent="."]
 layout_mode = 3
@@ -33,13 +33,14 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect2" type="TextureRect" parent="Menu"]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.995
 offset_right = -2.0
 offset_bottom = 0.239929
-texture = ExtResource("2_fesc8")
+texture = ExtResource("2_oue1f")
 
 [node name="TextureRect" type="TextureRect" parent="Menu"]
 layout_mode = 2
@@ -47,7 +48,7 @@ offset_left = 246.0
 offset_top = 99.0
 offset_right = 375.0
 offset_bottom = 219.0
-texture = ExtResource("1_itlb5")
+texture = ExtResource("3_8ekyb")
 expand_mode = 1
 
 [node name="StartGame" type="ColorRect" parent="Menu"]
@@ -66,7 +67,7 @@ offset_right = 359.0
 offset_bottom = 65.0
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
-theme_override_fonts/font = ExtResource("2_287c5")
+theme_override_fonts/font = ExtResource("4_ht8u2")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_bawla")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ybhai")
@@ -88,7 +89,7 @@ offset_right = 359.0
 offset_bottom = 65.0
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
-theme_override_fonts/font = ExtResource("2_287c5")
+theme_override_fonts/font = ExtResource("4_ht8u2")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_bawla")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ybhai")
@@ -111,7 +112,7 @@ offset_right = 359.0
 offset_bottom = 65.0
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
-theme_override_fonts/font = ExtResource("2_287c5")
+theme_override_fonts/font = ExtResource("4_ht8u2")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_bawla")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ybhai")

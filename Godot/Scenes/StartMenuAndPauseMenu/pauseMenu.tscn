@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://y4g0aelia2r3"]
 
-[ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="1_j4dsj"]
-[ext_resource type="Script" path="res://pauseMenu.gd" id="1_mg7f2"]
+[ext_resource type="Script" path="res://Scripts/Lizzy/pauseMenu.gd" id="1_o3phk"]
+[ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="2_jhyjk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6rh"]
 bg_color = Color(0, 0, 0, 1)
@@ -26,7 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mg7f2")
+script = ExtResource("1_o3phk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -46,7 +46,7 @@ offset_right = 359.0
 offset_bottom = 65.0
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
-theme_override_fonts/font = ExtResource("1_j4dsj")
+theme_override_fonts/font = ExtResource("2_jhyjk")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_lp6rh")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
@@ -69,7 +69,7 @@ offset_right = 359.0
 offset_bottom = 65.0
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
-theme_override_fonts/font = ExtResource("1_j4dsj")
+theme_override_fonts/font = ExtResource("2_jhyjk")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_lp6rh")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
@@ -81,7 +81,7 @@ offset_left = 390.0
 offset_top = 177.0
 offset_right = 800.0
 offset_bottom = 273.0
-theme_override_fonts/normal_font = ExtResource("1_j4dsj")
+theme_override_fonts/normal_font = ExtResource("2_jhyjk")
 theme_override_font_sizes/normal_font_size = 100
 text = "paused"
 
