@@ -1,3 +1,5 @@
 res://Scenes/GameSettings/PlayerNames.gd
 res://Scenes/GameSettings/game_settings.tscn
 res://Scenes/GameSettings/RadiusBar.gd
+res://Scenes/StartMenuAndPauseMenu/pauseMenu.tscn
+res://Scenes/StartMenuAndPauseMenu/start_menu.tscn

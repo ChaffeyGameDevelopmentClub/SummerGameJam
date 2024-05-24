@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
 [ext_resource type="Texture2D" uid="uid://c5wrpsyjjhsm" path="res://Assets/Art/Player3/Player3BottomLeft.png" id="3_j3pc7"]
 [ext_resource type="Texture2D" uid="uid://dt8pnpywyoeej" path="res://Assets/Art/Player4/Player4BottomRight.png" id="4_v2mwk"]
-[ext_resource type="Script" path="res://Scenes/GameSettings/PlayerNames.gd" id="5_d4rvn"]
+[ext_resource type="Script" path="res://Scripts/Luna/PlayerNames.gd" id="5_d4rvn"]
 [ext_resource type="Texture2D" uid="uid://c2nf2qkrvkkrp" path="res://Assets/Art/Sectioned Keys/keys/a.png" id="5_oiinv"]
 [ext_resource type="Texture2D" uid="uid://bw00quaby7uc0" path="res://Assets/Art/Sectioned Keys/Pressed Keys/a.png" id="6_y62wq"]
 [ext_resource type="Texture2D" uid="uid://dv58t0yq0tfiy" path="res://Assets/Art/Sectioned Keys/keys/b.png" id="7_n4j25"]
@@ -62,7 +62,7 @@
 [ext_resource type="Texture2D" uid="uid://bbjmyi88ks2dk" path="res://Assets/Art/Sectioned Keys/Pressed Keys/y.png" id="55_2rb2o"]
 [ext_resource type="Texture2D" uid="uid://dyh6jtvvs0uoi" path="res://Assets/Art/Sectioned Keys/Pressed Keys/z.png" id="57_6a50d"]
 [ext_resource type="Texture2D" uid="uid://jblywjbibv7x" path="res://Assets/Art/MenuSettingsBg.png" id="62_kf363"]
-[ext_resource type="Script" path="res://Scenes/GameSettings/RadiusBar.gd" id="63_rxxix"]
+[ext_resource type="Script" path="res://Scripts/Luna/RadiusBar.gd" id="63_rxxix"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
