@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://ywkqu5myubrk"]
+[gd_scene load_steps=79 format=3 uid="uid://ywkqu5myubrk"]
 
 [ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Art/Player1/Player1TopLeft.png" id="1_r5pfv"]
 [ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Art/Player2/Player2TopRight.png" id="2_o1wqh"]
@@ -9,23 +9,29 @@
 [ext_resource type="Texture2D" uid="uid://bw00quaby7uc0" path="res://Assets/Art/Sectioned Keys/Pressed Keys/a.png" id="6_y62wq"]
 [ext_resource type="Texture2D" uid="uid://dv58t0yq0tfiy" path="res://Assets/Art/Sectioned Keys/keys/b.png" id="7_n4j25"]
 [ext_resource type="Texture2D" uid="uid://xmvp2mkhrpks" path="res://Assets/Art/Sectioned Keys/Pressed Keys/b.png" id="8_sywlc"]
+[ext_resource type="Script" path="res://Scenes/GameSettings/TextureButtonA.gd" id="9_7p54w"]
+[ext_resource type="Texture2D" uid="uid://cyo25p1vu1rcx" path="res://Assets/Art/Sectioned Keys/Hovered/a.png" id="9_eavau"]
 [ext_resource type="Texture2D" uid="uid://yc1uqoggqoet" path="res://Assets/Art/Sectioned Keys/keys/c.png" id="9_jjpxj"]
 [ext_resource type="Texture2D" uid="uid://2cjvuttucs31" path="res://Assets/Art/Sectioned Keys/Pressed Keys/c.png" id="10_nxgjm"]
 [ext_resource type="Texture2D" uid="uid://bmt7qled7qpmi" path="res://Assets/Art/Sectioned Keys/keys/d.png" id="11_2vms7"]
 [ext_resource type="Texture2D" uid="uid://bnw0r87x47uvc" path="res://Assets/Art/Sectioned Keys/Pressed Keys/d.png" id="12_atb67"]
+[ext_resource type="Texture2D" uid="uid://bxu6hjxqspw6" path="res://Assets/Art/Sectioned Keys/Hovered/b.png" id="13_1rdf4"]
 [ext_resource type="Texture2D" uid="uid://ikeydahmak0h" path="res://Assets/Art/Sectioned Keys/keys/e.png" id="13_br55w"]
 [ext_resource type="Texture2D" uid="uid://qohpvevxh7bt" path="res://Assets/Art/Sectioned Keys/Pressed Keys/e.png" id="14_wit64"]
 [ext_resource type="Texture2D" uid="uid://bxg7r4ftbhmlt" path="res://Assets/Art/Sectioned Keys/keys/f.png" id="15_h0236"]
+[ext_resource type="Texture2D" uid="uid://btq7ul3dikd4i" path="res://Assets/Art/Sectioned Keys/Hovered/c.png" id="16_c0bte"]
 [ext_resource type="Texture2D" uid="uid://n1ct1x6raei8" path="res://Assets/Art/Sectioned Keys/keys/g.png" id="16_iooo6"]
 [ext_resource type="Texture2D" uid="uid://bar6pbkhdcbg5" path="res://Assets/Art/Sectioned Keys/keys/h.png" id="17_15rem"]
 [ext_resource type="Texture2D" uid="uid://c4u1yjqaxtvm" path="res://Assets/Art/Sectioned Keys/Pressed Keys/f.png" id="17_pkyoa"]
 [ext_resource type="Texture2D" uid="uid://2tbgk5gjxpyk" path="res://Assets/Art/Sectioned Keys/keys/i.png" id="18_ljwx2"]
 [ext_resource type="Texture2D" uid="uid://by2odyy0s8xqs" path="res://Assets/Art/Sectioned Keys/Pressed Keys/g.png" id="19_5f5hh"]
+[ext_resource type="Texture2D" uid="uid://b80l2h1n8wa27" path="res://Assets/Art/Sectioned Keys/Hovered/d.png" id="19_ikntp"]
 [ext_resource type="Texture2D" uid="uid://bops55tbn8sh3" path="res://Assets/Art/Sectioned Keys/keys/j.png" id="19_v2bv8"]
 [ext_resource type="Texture2D" uid="uid://dkh2yfxqgho3d" path="res://Assets/Art/Sectioned Keys/keys/k.png" id="20_3vhpb"]
 [ext_resource type="Texture2D" uid="uid://hoio3kfoh6o3" path="res://Assets/Art/Sectioned Keys/keys/l.png" id="21_id15q"]
 [ext_resource type="Texture2D" uid="uid://c7dlm2t1vkrex" path="res://Assets/Art/Sectioned Keys/Pressed Keys/h.png" id="21_ksji7"]
 [ext_resource type="Texture2D" uid="uid://dkd5juckx2exb" path="res://Assets/Art/Sectioned Keys/keys/m.png" id="22_le8e0"]
+[ext_resource type="Texture2D" uid="uid://d2igcifnxtmxj" path="res://Assets/Art/Sectioned Keys/Hovered/e.png" id="22_udi5y"]
 [ext_resource type="Texture2D" uid="uid://ddlv7m2cwa6qp" path="res://Assets/Art/Sectioned Keys/Pressed Keys/i.png" id="23_25tvr"]
 [ext_resource type="Texture2D" uid="uid://cyjyumubdvgj1" path="res://Assets/Art/Sectioned Keys/keys/n.png" id="23_xhvkj"]
 [ext_resource type="Texture2D" uid="uid://dsnr306qebw7e" path="res://Assets/Art/Sectioned Keys/keys/o.png" id="24_003to"]
@@ -66,6 +72,7 @@
 [ext_resource type="Texture2D" uid="uid://d3q26muhubeis" path="res://Assets/Art/MainMenuBG.png" id="64_gfmt1"]
 [ext_resource type="Texture2D" uid="uid://dlqoyt2hvlitk" path="res://Assets/Art/Sectioned Keys/keys/right.png" id="65_yv30v"]
 [ext_resource type="Texture2D" uid="uid://babbunfr3xd72" path="res://Assets/Art/Sectioned Keys/Pressed Keys/right.png" id="66_3iwro"]
+[ext_resource type="Texture2D" uid="uid://1r7rj64benkb" path="res://Assets/Art/Sectioned Keys/Hovered/right.png" id="74_3gun2"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
@@ -211,30 +218,41 @@ texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("5_oiinv")
 texture_pressed = ExtResource("6_y62wq")
+texture_hover = ExtResource("9_eavau")
+texture_focused = ExtResource("9_eavau")
+script = ExtResource("9_7p54w")
 
 [node name="TextureButtonB" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("7_n4j25")
 texture_pressed = ExtResource("8_sywlc")
+texture_hover = ExtResource("13_1rdf4")
+texture_focused = ExtResource("13_1rdf4")
 
 [node name="TextureButtonC" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("9_jjpxj")
 texture_pressed = ExtResource("10_nxgjm")
+texture_hover = ExtResource("16_c0bte")
+texture_focused = ExtResource("16_c0bte")
 
 [node name="TextureButtonD" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("11_2vms7")
 texture_pressed = ExtResource("12_atb67")
+texture_hover = ExtResource("19_ikntp")
+texture_focused = ExtResource("19_ikntp")
 
 [node name="TextureButtonE" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("13_br55w")
 texture_pressed = ExtResource("14_wit64")
+texture_hover = ExtResource("22_udi5y")
+texture_focused = ExtResource("22_udi5y")
 
 [node name="TextureButtonF" type="TextureButton" parent="Keyboard/GridContainer"]
 texture_filter = 1
@@ -539,6 +557,8 @@ grow_horizontal = 0
 grow_vertical = 2
 texture_normal = ExtResource("65_yv30v")
 texture_pressed = ExtResource("66_3iwro")
+texture_hover = ExtResource("74_3gun2")
+texture_focused = ExtResource("74_3gun2")
 
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonA" to="Player Cards/PlayerNames" method="_on_texture_button_a_pressed"]
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonB" to="Player Cards/PlayerNames" method="_on_texture_button_b_pressed"]
