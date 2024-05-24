@@ -5,6 +5,7 @@
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_dp54d"]
 
 [node name="TestRagDoll" type="RigidBody3D"]
+mass = 0.01
 
 [node name="SoftBody3D" type="SoftBody3D" parent="."]
 mesh = SubResource("CylinderMesh_neqd1")
@@ -99,3 +100,100 @@ attachments/27/offset = Vector3(0, -0.6, 0.5)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CylinderShape3D_dp54d")
+
+[node name="SoftBody3D2" type="SoftBody3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_neqd1")
+parent_collision_ignore = NodePath("..")
+linear_stiffness = 1.0
+pressure_coefficient = 10.0
+pinned_points = [390, 456, 191, 159, 180, 4, 3, 144, 192, 193, 131, 130, 127, 128, 65, 67, 62, 1, 256, 257, 196, 322, 262, 386, 326, 323, 261, 260]
+attachments/0/point_index = 390
+attachments/0/spatial_attachment_path = NodePath("..")
+attachments/0/offset = Vector3(0, 1, 0)
+attachments/1/point_index = 456
+attachments/1/spatial_attachment_path = NodePath("..")
+attachments/1/offset = Vector3(0, -1, 0)
+attachments/2/point_index = 191
+attachments/2/spatial_attachment_path = NodePath("..")
+attachments/2/offset = Vector3(0.145142, 0.2, -0.47847)
+attachments/3/point_index = 159
+attachments/3/spatial_attachment_path = NodePath("..")
+attachments/3/offset = Vector3(-0.145142, 0.2, 0.47847)
+attachments/4/point_index = 180
+attachments/4/spatial_attachment_path = NodePath("..")
+attachments/4/offset = Vector3(0.490393, 0.2, -0.0975452)
+attachments/5/point_index = 4
+attachments/5/spatial_attachment_path = NodePath("..")
+attachments/5/offset = Vector3(-0.191342, 1, -0.46194)
+attachments/6/point_index = 3
+attachments/6/spatial_attachment_path = NodePath("..")
+attachments/6/offset = Vector3(-0.145142, 1, -0.47847)
+attachments/7/point_index = 144
+attachments/7/spatial_attachment_path = NodePath("..")
+attachments/7/offset = Vector3(-0.490393, 0.2, -0.0975451)
+attachments/8/point_index = 192
+attachments/8/spatial_attachment_path = NodePath("..")
+attachments/8/offset = Vector3(0.0975451, 0.2, -0.490393)
+attachments/9/point_index = 193
+attachments/9/spatial_attachment_path = NodePath("..")
+attachments/9/offset = Vector3(0.0490085, 0.2, -0.497592)
+attachments/10/point_index = 131
+attachments/10/spatial_attachment_path = NodePath("..")
+attachments/10/offset = Vector3(-0.0490086, 0.2, -0.497592)
+attachments/11/point_index = 130
+attachments/11/spatial_attachment_path = NodePath("..")
+attachments/11/offset = Vector3(-4.37114e-08, 0.2, -0.5)
+attachments/12/point_index = 127
+attachments/12/spatial_attachment_path = NodePath("..")
+attachments/12/offset = Vector3(0.0975451, 0.6, -0.490393)
+attachments/13/point_index = 128
+attachments/13/spatial_attachment_path = NodePath("..")
+attachments/13/offset = Vector3(0.0490085, 0.6, -0.497592)
+attachments/14/point_index = 65
+attachments/14/spatial_attachment_path = NodePath("..")
+attachments/14/offset = Vector3(-4.37114e-08, 0.6, -0.5)
+attachments/15/point_index = 67
+attachments/15/spatial_attachment_path = NodePath("..")
+attachments/15/offset = Vector3(-0.0975452, 0.6, -0.490393)
+attachments/16/point_index = 62
+attachments/16/spatial_attachment_path = NodePath("..")
+attachments/16/offset = Vector3(0.0975451, 1, -0.490393)
+attachments/17/point_index = 1
+attachments/17/spatial_attachment_path = NodePath("..")
+attachments/17/offset = Vector3(-0.0490086, 1, -0.497592)
+attachments/18/point_index = 256
+attachments/18/spatial_attachment_path = NodePath("..")
+attachments/18/offset = Vector3(0.145142, -0.2, -0.47847)
+attachments/19/point_index = 257
+attachments/19/spatial_attachment_path = NodePath("..")
+attachments/19/offset = Vector3(0.0975451, -0.2, -0.490393)
+attachments/20/point_index = 196
+attachments/20/spatial_attachment_path = NodePath("..")
+attachments/20/offset = Vector3(-0.0490086, -0.2, -0.497592)
+attachments/21/point_index = 322
+attachments/21/spatial_attachment_path = NodePath("..")
+attachments/21/offset = Vector3(0.0975451, -0.6, -0.490393)
+attachments/22/point_index = 262
+attachments/22/spatial_attachment_path = NodePath("..")
+attachments/22/offset = Vector3(-0.0975452, -0.6, -0.490393)
+attachments/23/point_index = 386
+attachments/23/spatial_attachment_path = NodePath("..")
+attachments/23/offset = Vector3(0.145142, -1, -0.47847)
+attachments/24/point_index = 326
+attachments/24/spatial_attachment_path = NodePath("..")
+attachments/24/offset = Vector3(-0.0490086, -1, -0.497592)
+attachments/25/point_index = 323
+attachments/25/spatial_attachment_path = NodePath("..")
+attachments/25/offset = Vector3(0.0490085, -0.6, -0.497592)
+attachments/26/point_index = 261
+attachments/26/spatial_attachment_path = NodePath("..")
+attachments/26/offset = Vector3(-0.0490086, -0.6, -0.497592)
+attachments/27/point_index = 260
+attachments/27/spatial_attachment_path = NodePath("..")
+attachments/27/offset = Vector3(-4.37114e-08, -0.6, -0.5)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_dp54d")
+disabled = true
