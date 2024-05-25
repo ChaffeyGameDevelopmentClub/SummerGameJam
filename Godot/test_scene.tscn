@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bj4ug52mg1hn4"]
 
-[ext_resource type="PackedScene" uid="uid://fqqkgwt4gpjo" path="res://booker.tscn" id="1_em1l0"]
+[ext_resource type="PackedScene" uid="uid://g3t1uvydu26s" path="res://booker.tscn" id="1_em1l0"]
 [ext_resource type="PackedScene" uid="uid://duxo2xttlv2w5" path="res://test_rag_doll.tscn" id="2_3t205"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_has2e"]
@@ -12,15 +12,15 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 use_collision = true
 mesh = SubResource("PlaneMesh_has2e")
 
-[node name="Booker" parent="." instance=ExtResource("1_em1l0")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.138751, 0, -0.131746)
-
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.972059, 0.234735, 0, -0.234735, 0.972059, 0, 2.07109, 21.0558)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.138751, 7.9537, 33.8944)
 
 [node name="TestRagDoll" parent="." instance=ExtResource("2_3t205")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.29992, 3)
+
+[node name="Booker" parent="." instance=ExtResource("1_em1l0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.220206, 3.10906, 5.26707)
