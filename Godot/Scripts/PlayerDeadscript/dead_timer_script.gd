@@ -27,8 +27,10 @@ func _process(_delta):
 	#Player 1 Input
 	if Input.is_action_just_released("DrobBombP1"):
 			if AdrianGlobal.coin1 >= 10:
-				var location = $"../Player1Cursor".global_position
-				AdrianGlobal.emit_signal("bomb_press",location)
+				var locationx = $"../Player1Cursor".global_position.x
+				var locationy = $"../Player1Cursor".global_position.y
+				var locationz = $"../Player1Cursor".global_position.z
+				AdrianGlobal.emit_signal("bomb_press",locationx, locationz, locationy)
 				AdrianGlobal.coin1 -= 10
 				$CoinPlayer1.start()
 			else:
@@ -37,8 +39,10 @@ func _process(_delta):
 	#Player 2 Input
 	if Input.is_action_just_released("DropBombP2"):
 			if AdrianGlobal.coin2 >= 10:
-				var location = $"../Player2Cursor".global_position
-				AdrianGlobal.emit_signal("bomb_press",location)
+				var locationx = $"../Player2Cursor".global_position.x
+				var locationy = $"../Player2Cursor".global_position.y
+				var locationz = $"../Player2Cursor".global_position.z
+				AdrianGlobal.emit_signal("bomb_press",locationx, locationz, locationy)
 				AdrianGlobal.coin2 -= 10
 				$CoinPlayer1.start()
 			else:
@@ -47,8 +51,10 @@ func _process(_delta):
 	#Player 3 Input
 	if Input.is_action_just_released("DropBombP3"):
 			if AdrianGlobal.coin3 >= 10:
-				var location = $"../Player3Cursor".global_position
-				AdrianGlobal.emit_signal("bomb_press",location)
+				var locationx = $"../Player3Cursor".global_position.x
+				var locationy = $"../Player3Cursor".global_position.y
+				var locationz = $"../Player3Cursor".global_position.z
+				AdrianGlobal.emit_signal("bomb_press",locationx, locationz, locationy)
 				AdrianGlobal.coin3 -= 10
 				$CoinPlayer1.start()
 			else:
@@ -57,8 +63,10 @@ func _process(_delta):
 	#Player 4 Input
 	if Input.is_action_just_released("DropBombP4"):
 			if AdrianGlobal.coin4 >= 10:
-				var location = $"../Player4Cursor".global_position
-				AdrianGlobal.emit_signal("bomb_press",location)
+				var locationx = $"../Player4Cursor".global_position.x
+				var locationy = $"../Player4Cursor".global_position.y
+				var locationz = $"../Player4Cursor".global_position.z
+				AdrianGlobal.emit_signal("bomb_press",locationx, locationz, locationy)
 				AdrianGlobal.coin4 -= 10
 				$CoinPlayer1.start()
 			else:
