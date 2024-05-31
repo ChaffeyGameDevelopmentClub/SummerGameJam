@@ -1,9 +1,11 @@
+TextureButton
+VBoxContainer
+RichTextLabel
+CanvasLayer
 TextureRect
 Control
 Container
-RichTextLabel
 GridContainer
-TextureButton
 TextureRect
 SpinBox
 HSlider

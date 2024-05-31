@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=3 uid="uid://ywkqu5myubrk"]
+[gd_scene load_steps=102 format=3 uid="uid://ywkqu5myubrk"]
 
 [ext_resource type="Texture2D" uid="uid://cfg2wswiicd2r" path="res://Assets/Player1/Player1TopLeft.png" id="1_r5pfv"]
 [ext_resource type="Texture2D" uid="uid://c3lc6kbwjq8ua" path="res://Assets/Player2/Player2TopRight.png" id="2_o1wqh"]
@@ -96,6 +96,7 @@
 [ext_resource type="Texture2D" uid="uid://c2sf0ro0tb3co" path="res://Assets/Art/Sectioned Keys/Hovered/z.png" id="85_oibug"]
 [ext_resource type="Texture2D" uid="uid://fm6xmt5nax4e" path="res://Assets/Art/Sectioned Keys/Hovered/Back.png" id="88_t5ps0"]
 [ext_resource type="Texture2D" uid="uid://vseii0d0acav" path="res://Assets/Art/Sectioned Keys/Hovered/Enter.png" id="94_446uq"]
+[ext_resource type="PackedScene" uid="uid://y4g0aelia2r3" path="res://Scenes/Start&PauseMenu/pauseMenu.tscn" id="97_mucio"]
 
 [sub_resource type="Theme" id="Theme_0o3xg"]
 default_font_size = 23
@@ -579,6 +580,10 @@ grow_horizontal = 2
 theme = SubResource("Theme_v3022")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Item Settings"
+
+[node name="pauseMenu" parent="." instance=ExtResource("97_mucio")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonA" to="Player Cards/PlayerNames" method="_on_texture_button_a_pressed"]
 [connection signal="pressed" from="Keyboard/GridContainer/TextureButtonB" to="Player Cards/PlayerNames" method="_on_texture_button_b_pressed"]

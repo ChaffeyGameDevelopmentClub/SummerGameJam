@@ -28,9 +28,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_x3iam")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 393.0
 offset_top = 177.0
 offset_right = 803.0
@@ -39,7 +37,8 @@ theme_override_fonts/normal_font = ExtResource("1_j4dsj")
 theme_override_font_sizes/normal_font_size = 100
 text = "paused"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -48,7 +47,7 @@ offset_top = 368.0
 offset_right = -366.0
 offset_bottom = -107.0
 
-[node name="ResumeButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="ResumeButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
@@ -59,7 +58,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
 text = "resume
 "
 
-[node name="MMButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="MMButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
@@ -70,7 +69,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
 text = "main menu
 "
 
-[node name="QuitButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
@@ -81,6 +80,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
 text = "Quit
 "
 
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/MMButton" to="." method="_on_mm_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/VBoxContainer/QuitButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/MMButton" to="." method="_on_mm_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_button_pressed"]

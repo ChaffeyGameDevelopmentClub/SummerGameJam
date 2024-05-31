@@ -4,7 +4,7 @@ var paused = false
 # Called when the node enters the scene tree for the first time.
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("Pause"):
+	if Input.is_action_just_pressed("Pause"):
 		print('pause')
 		pauseMenu()
 
@@ -15,14 +15,13 @@ func _ready():
 
 func pauseMenu(): 
 	if paused:
-		pause_Menu.hide()
-		paused = false
-		Engine.time_scale = 1
-	else:
 		pause_Menu.show()
-		paused = true
+		Engine.time_scale = 1
+		paused = false
+	else:
+		pause_Menu.hide()
 		Engine.time_scale = 0
-		
+		paused = true
 	
 
 func _on_button_pressed():
