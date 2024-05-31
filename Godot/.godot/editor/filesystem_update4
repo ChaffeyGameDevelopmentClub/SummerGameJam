@@ -1,0 +1,6 @@
+res://Scenes/Start&PauseMenu/pauseMenu.tscn
+res://Scenes/Start&PauseMenu/start_menu.gd
+res://Scenes/Start&PauseMenu/start_menu.tscn
+res://Scenes/GameSettings/game_settings.tscn
+res://script/Lizzy/pauseMenu.gd
+res://pause_menu.tscn

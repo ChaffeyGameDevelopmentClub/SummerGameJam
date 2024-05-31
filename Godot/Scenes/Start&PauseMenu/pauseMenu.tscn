@@ -1,0 +1,85 @@
+[gd_scene load_steps=5 format=3 uid="uid://y4g0aelia2r3"]
+
+[ext_resource type="FontFile" uid="uid://cvpaetv3oobqs" path="res://Assets/Beyblade Metal Fight Font.ttf" id="1_j4dsj"]
+[ext_resource type="Script" path="res://script/Lizzy/pauseMenu.gd" id="1_x3iam"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6rh"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qwek"]
+bg_color = Color(0.0235294, 0.0235294, 0.0235294, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.372549, 0.803922, 0.894118, 1)
+
+[node name="pauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x3iam")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 393.0
+offset_top = 177.0
+offset_right = 803.0
+offset_bottom = 273.0
+theme_override_fonts/normal_font = ExtResource("1_j4dsj")
+theme_override_font_sizes/normal_font_size = 100
+text = "paused"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 403.0
+offset_top = 368.0
+offset_right = -366.0
+offset_bottom = -107.0
+
+[node name="ResumeButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
+theme_override_fonts/font = ExtResource("1_j4dsj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_lp6rh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
+text = "resume
+"
+
+[node name="MMButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
+theme_override_fonts/font = ExtResource("1_j4dsj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_lp6rh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
+text = "main menu
+"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.372549, 0.803922, 0.894118, 1)
+theme_override_fonts/font = ExtResource("1_j4dsj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_lp6rh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3qwek")
+text = "Quit
+"
+
+[connection signal="pressed" from="VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/MMButton" to="." method="_on_mm_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_button_pressed"]
